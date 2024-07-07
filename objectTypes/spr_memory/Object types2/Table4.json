@@ -1,0 +1,21 @@
+{
+	"name": "Table4",
+	"plugin-id": "TiledBg",
+	"sid": 305254561066202,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 16,
+		"height": 16,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 8554025,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

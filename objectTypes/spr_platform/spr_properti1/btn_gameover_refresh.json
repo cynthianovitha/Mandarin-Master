@@ -1,0 +1,27 @@
+{
+	"name": "btn_gameover_refresh",
+	"plugin-id": "TiledBg",
+	"sid": 126893717369109,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 450041280396996
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 250,
+		"height": 250,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 3800104,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

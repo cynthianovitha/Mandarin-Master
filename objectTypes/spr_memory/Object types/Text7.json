@@ -1,0 +1,17 @@
+{
+	"name": "Text7",
+	"plugin-id": "Text",
+	"sid": 421160820959893,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "FontID",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 366474745541429
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

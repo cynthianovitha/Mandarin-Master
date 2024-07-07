@@ -1,0 +1,65 @@
+{
+	"name": "Credit ES",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 491332868054892,
+					"parameters": {
+						"object": "btn_back",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btn_back",
+					"sid": 757698677113015,
+					"parameters": {
+						"width": "200",
+						"height": "200"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 462377274524188,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "btn_back",
+					"sid": 190502400722431,
+					"parameters": {
+						"width": "220",
+						"height": "220"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 629862501302831,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 445817215227406,
+					"parameters": {
+						"layout": "Utama Layout"
+					}
+				}
+			],
+			"sid": 674753490452687
+		}
+	],
+	"sid": 878611084126025
+}

@@ -1,0 +1,17 @@
+{
+	"name": "Text8",
+	"plugin-id": "Text",
+	"sid": 739714482419042,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "FontID",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 422178611722877
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

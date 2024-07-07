@@ -1,0 +1,9798 @@
+{
+	"name": "Materi1  Layout",
+	"layers": [
+		{
+			"name": "Background",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "bg_blur",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2135,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1920,
+						"y": 1080,
+						"width": 4319.987386,
+						"height": 2429.992905,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 573006341399547,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Button",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "btn_back",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2136,
+					"instanceVariables": {
+						"UkuranX": 0,
+						"UkuranY": 0
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 300,
+						"y": 300,
+						"width": 260,
+						"height": 260,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 353547665812624,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Asset",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "Sprite24",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2156,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2156,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 720,
+						"y": 790,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite25",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2543,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2543,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 1320,
+						"y": 790,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite32",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2636,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2636,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 1920,
+						"y": 790,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite33",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2637,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2637,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 2520,
+						"y": 790,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite34",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2639,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3568627450980392,
+									0.5803921568627451,
+									0.6078431372549019,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2639,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 3120,
+						"y": 790,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite45",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2611,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2611,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 720,
+						"y": 2350,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite40",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2155,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2155,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 720,
+						"y": 1570,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite41",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2157,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2157,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 1320,
+						"y": 1570,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite42",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2532,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2532,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 1920,
+						"y": 1570,
+						"width": 470,
+						"height": 654,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite43",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2533,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2533,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 2520,
+						"y": 1570,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite44",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2538,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2538,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 3120,
+						"y": 1570,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite46",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2634,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2634,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 1320,
+						"y": 2350,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite47",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2635,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.38823529411764707,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2635,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 1920,
+						"y": 2350,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite48",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2638,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2638,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 2520,
+						"y": 2350,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite49",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2640,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2640,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 3120,
+						"y": 2350,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite50",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2641,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2641,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 720,
+						"y": 3130,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite51",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2642,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2642,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 1320,
+						"y": 3130,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite52",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2643,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2643,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 1920,
+						"y": 3130,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite53",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2651,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2651,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 2520,
+						"y": 3130,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite54",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2652,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.25,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2652,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 3120,
+						"y": 3130,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite90",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2678,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2678,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 720,
+						"y": 3910,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite91",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2679,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2679,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 1320,
+						"y": 3910,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite92",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2680,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2680,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 1920,
+						"y": 3910,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite93",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2681,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2681,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 2520,
+						"y": 3910,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite94",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2682,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2682,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 3120,
+						"y": 3910,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite95",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2683,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2683,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 720,
+						"y": 4690,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite96",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2684,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2684,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 1320,
+						"y": 4690,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite97",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2685,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2685,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 1920,
+						"y": 4690,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite98",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2686,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2686,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 2520,
+						"y": 4690,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite99",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2687,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2687,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 3120,
+						"y": 4690,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite100",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2688,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2688,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 720,
+						"y": 5470,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite101",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2689,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2689,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 1320,
+						"y": 5470,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite102",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2690,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2690,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 1920,
+						"y": 5470,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite103",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2691,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2691,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 2520,
+						"y": 5470,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite104",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2692,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2692,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 3120,
+						"y": 5470,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite105",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2693,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2693,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 720,
+						"y": 6250,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite106",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2694,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2694,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 1320,
+						"y": 6250,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite107",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2695,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2695,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 1920,
+						"y": 6250,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite108",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2696,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2696,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 2520,
+						"y": 6250,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite109",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2697,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2697,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 3120,
+						"y": 6250,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite110",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2698,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2698,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 720,
+						"y": 7030,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite111",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2699,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2699,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 1320,
+						"y": 7030,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite112",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2700,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2700,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 1920,
+						"y": 7030,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite113",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2701,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2701,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 2520,
+						"y": 7030,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite114",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2702,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2702,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 3120,
+						"y": 7030,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite115",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2703,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2703,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 720,
+						"y": 7810,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite116",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2704,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2704,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 1320,
+						"y": 7810,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite117",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2705,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2705,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 1920,
+						"y": 7810,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite118",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2706,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2706,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 2520,
+						"y": 7810,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite119",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2707,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2707,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 3120,
+						"y": 7810,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite120",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2708,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2708,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 720,
+						"y": 8590,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite121",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2709,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2709,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 1320,
+						"y": 8590,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite122",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2710,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2710,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 1920,
+						"y": 8590,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite123",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2711,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2711,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 2520,
+						"y": 8590,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite124",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2712,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2712,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 3120,
+						"y": 8590,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite125",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2713,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2713,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 720,
+						"y": 9370,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite126",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2714,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2714,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 1320,
+						"y": 9370,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite127",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2715,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2715,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 1920,
+						"y": 9370,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite128",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2716,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2716,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 2520,
+						"y": 9370,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite129",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2717,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2717,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 3120,
+						"y": 9370,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite130",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2718,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2718,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 720,
+						"y": 10150,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite131",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2719,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2719,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 1320,
+						"y": 10150,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite132",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2720,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2720,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 1920,
+						"y": 10150,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite133",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2721,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2721,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 2520,
+						"y": 10150,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite134",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2722,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2722,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 3120,
+						"y": 10150,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite135",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2723,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2723,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 720,
+						"y": 10930,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite136",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2724,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2724,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 1320,
+						"y": 10930,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite137",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2725,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2725,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 1920,
+						"y": 10930,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite138",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2726,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2726,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 2520,
+						"y": 10930,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite139",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2727,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2727,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 3120,
+						"y": 10930,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite140",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2728,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2728,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 720,
+						"y": 11710,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite141",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2729,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2729,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 1320,
+						"y": 11710,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite142",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2730,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2730,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 1920,
+						"y": 11710,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite143",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2731,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2731,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 2520,
+						"y": 11710,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite144",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2732,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2732,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 3120,
+						"y": 11710,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite145",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2733,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2733,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 720,
+						"y": 12490,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite146",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2734,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2734,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 1320,
+						"y": 12490,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite147",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2735,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2735,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 1920,
+						"y": 12490,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite148",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2736,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2736,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 2520,
+						"y": 12490,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite149",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2737,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2737,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 3120,
+						"y": 12490,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite150",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2738,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2738,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 720,
+						"y": 13270,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite151",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2739,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2739,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 1320,
+						"y": 13270,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite152",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2740,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2740,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 1920,
+						"y": 13270,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite153",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2741,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2741,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 2520,
+						"y": 13270,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite154",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2742,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2742,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 3120,
+						"y": 13270,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite155",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2743,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2743,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 720,
+						"y": 14050,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite156",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2744,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2744,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 1320,
+						"y": 14050,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite157",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2745,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2745,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 1920,
+						"y": 14050,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite158",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2746,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2746,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 2520,
+						"y": 14050,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite159",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2747,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2747,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 3120,
+						"y": 14050,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite160",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2748,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2748,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 720,
+						"y": 14830,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite161",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2749,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2749,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 1320,
+						"y": 14830,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite162",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2750,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2750,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 1920,
+						"y": 14830,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite163",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2751,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2751,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 2520,
+						"y": 14830,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite164",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2752,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2752,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 3120,
+						"y": 14830,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite165",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2753,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2753,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 720,
+						"y": 15610,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite166",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2754,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2754,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 1320,
+						"y": 15610,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite167",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2755,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2755,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 1920,
+						"y": 15610,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite168",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2756,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2756,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 2520,
+						"y": 15610,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite169",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2757,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"DepthStripe": {
+							"isEnabled": false,
+							"parameters": {
+								"color1": [
+									0.3843137254901961,
+									0.6274509803921569,
+									0.6549019607843137,
+									1
+								],
+								"opacity1": 0.5,
+								"color2": [
+									0,
+									1,
+									0,
+									1
+								],
+								"opacity2": 0.25,
+								"stripe-depth": 10,
+								"offset": 0
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2534,
+						"uid": 2757,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 3120,
+						"y": 15610,
+						"width": 470,
+						"height": 655,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 146505754049719,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Layer 0",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "TiledBackground13",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
+					},
+					"uid": 2534,
+					"instanceVariables": {},
+					"behaviors": {
+						"DragDrop": {
+							"properties": {
+								"axes": "vertical-only",
+								"enabled": true
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": null,
+						"uid": 2534,
+						"children": [
+							{
+								"uid": 2156,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2543,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2636,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2637,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2639,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2611,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2155,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2157,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2532,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2533,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2538,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2634,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2635,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2638,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2640,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2641,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2642,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2643,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2651,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2652,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2678,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2679,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2680,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2681,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2682,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2683,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2684,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2685,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2686,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2687,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2688,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2689,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2690,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2691,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2692,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2693,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2694,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2695,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2696,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2697,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2698,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2699,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2700,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2701,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2702,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2703,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2704,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2705,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2706,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2707,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2708,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2709,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2710,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2711,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2712,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2713,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2714,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2715,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2716,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2717,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2718,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2719,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2720,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2721,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2722,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2723,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2724,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2725,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2726,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2727,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2728,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2729,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2730,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2731,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2732,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2733,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2734,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2735,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2736,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2737,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2738,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2739,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2740,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2741,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2742,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2743,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2744,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2745,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2746,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2747,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2748,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2749,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2750,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2751,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2752,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2753,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2754,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2755,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2756,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 2757,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							}
+						],
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 456,
+						"y": 16030,
+						"width": 2938,
+						"height": -15601,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							0
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 413624618830163,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		}
+	],
+	"sid": 285778377980218,
+	"nonworld-instances": [],
+	"effectTypes": [],
+	"width": 3840,
+	"height": 2160,
+	"unboundedScrolling": false,
+	"vpX": 0.5,
+	"vpY": 0.5,
+	"projection": "perspective",
+	"eventSheet": "Materi1 ES"
+}

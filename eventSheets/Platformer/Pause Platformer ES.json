@@ -1,0 +1,167 @@
+{
+	"name": "Pause Platformer ES",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Pause",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 975242321605260,
+							"parameters": {
+								"object": "btn_pause",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 974249255607850,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 285697625602165,
+									"parameters": {
+										"variable": "Paused",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-time-scale",
+									"objectClass": "System",
+									"sid": 553286292663805,
+									"parameters": {
+										"time-scale": "0"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 448991461059875,
+									"parameters": {
+										"variable": "Paused",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 940694674036789
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 578177658204699
+								}
+							],
+							"actions": [
+								{
+									"id": "set-time-scale",
+									"objectClass": "System",
+									"sid": 564325180233701,
+									"parameters": {
+										"time-scale": "1"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 444961359710396,
+									"parameters": {
+										"variable": "Paused",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 653572700509523
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btn_pause",
+									"sid": 987635605868952,
+									"parameters": {
+										"frame-number": "Paused"
+									}
+								}
+							],
+							"sid": 170897261203387
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 116675629090966,
+							"parameters": {
+								"object": "btn_home",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 324633847252536,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 209581731027701,
+									"parameters": {
+										"variable": "Paused",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-time-scale",
+									"objectClass": "System",
+									"sid": 808866195773316,
+									"parameters": {
+										"time-scale": "1"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 525845165901931,
+									"parameters": {
+										"variable": "Paused",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 957900073244540
+						}
+					]
+				}
+			],
+			"sid": 427649507405524
+		}
+	],
+	"sid": 674331595998163
+}

@@ -1,0 +1,27 @@
+{
+	"name": "spr_solid2",
+	"plugin-id": "TiledBg",
+	"sid": 306815254489550,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 897406631363485
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 250,
+		"height": 250,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 1893700,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"name": "Text9",
+	"plugin-id": "Text",
+	"sid": 475413709496809,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "FontID",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 285668122037252
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

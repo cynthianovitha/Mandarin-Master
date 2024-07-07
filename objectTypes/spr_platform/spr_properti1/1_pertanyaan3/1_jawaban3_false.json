@@ -1,0 +1,27 @@
+{
+	"name": "1_jawaban3_false",
+	"plugin-id": "TiledBg",
+	"sid": 909460195170210,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 816428356213639
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 250,
+		"height": 250,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 3579564,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

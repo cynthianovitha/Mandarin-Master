@@ -1,0 +1,245 @@
+{
+	"name": "Menu Platformer ES",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 202817530398660,
+					"parameters": {
+						"object": "btn_back",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btn_back",
+					"sid": 464700566026909,
+					"parameters": {
+						"width": "200",
+						"height": "200"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 342704563061909,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "btn_back",
+					"sid": 556735386308462,
+					"parameters": {
+						"width": "220",
+						"height": "220"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 993091498796420,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 886417529899012,
+					"parameters": {
+						"layout": "Menu Layout"
+					}
+				}
+			],
+			"sid": 190810845952949
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 718757117451671,
+					"parameters": {
+						"object": "btn_level1",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 611303441455134,
+					"parameters": {
+						"layout": "Platformer 1 Layout"
+					}
+				}
+			],
+			"sid": 432590318485809
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 797175008390444,
+					"parameters": {
+						"object": "btn_level2",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 417303152586883,
+					"parameters": {
+						"layout": "Platformer 2 Layout"
+					}
+				}
+			],
+			"sid": 295210274918620
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 242880988861022,
+					"parameters": {
+						"variable": "bintang",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "BINTANG",
+					"sid": 403552568897371,
+					"parameters": {
+						"frame-number": "1"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BINTANG",
+					"sid": 896966988983973,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 434987519490994
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 794777473407128,
+					"parameters": {
+						"variable": "bintang",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "BINTANG",
+					"sid": 992552377125271,
+					"parameters": {
+						"frame-number": "2"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BINTANG",
+					"sid": 723814900283424,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 410738818911374
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 764219664011318,
+					"parameters": {
+						"variable": "bintang",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "BINTANG",
+					"sid": 555495916970103,
+					"parameters": {
+						"frame-number": "3"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BINTANG",
+					"sid": 948831339168420,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 809213433887134
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 584993711508592
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "BINTANG",
+					"sid": 847735291791489,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "btn_level1",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 542552079597419
+		}
+	],
+	"sid": 104948824551202
+}

@@ -1,0 +1,27 @@
+{
+	"name": "memory1_nextlevel3",
+	"plugin-id": "TiledBg",
+	"sid": 355649407018165,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 547560715239728
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 250,
+		"height": 250,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 154218,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

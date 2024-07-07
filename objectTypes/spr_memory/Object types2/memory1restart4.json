@@ -1,0 +1,27 @@
+{
+	"name": "memory1restart4",
+	"plugin-id": "TiledBg",
+	"sid": 799018785499988,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 883764720646331
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 250,
+		"height": 250,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 3035639,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

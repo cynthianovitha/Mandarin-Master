@@ -1,0 +1,17 @@
+{
+	"name": "Text5",
+	"plugin-id": "Text",
+	"sid": 517846840398527,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "FontID",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 138771942069815
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

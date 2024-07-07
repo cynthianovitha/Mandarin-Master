@@ -1,0 +1,165 @@
+{
+	"name": "Menu ES",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 579890247080036,
+					"parameters": {
+						"object": "btn_back",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btn_back",
+					"sid": 299145233638445,
+					"parameters": {
+						"width": "200",
+						"height": "200"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 208958392848756,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "btn_back",
+					"sid": 934015415909844,
+					"parameters": {
+						"width": "220",
+						"height": "220"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 998918246651790,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 673962442586158,
+					"parameters": {
+						"layout": "Utama Layout"
+					}
+				}
+			],
+			"sid": 375252799585497
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 739668150565168,
+					"parameters": {
+						"object": "btn_platformer",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 444747993589648,
+					"parameters": {
+						"layout": "Menu Platformer Layout"
+					}
+				}
+			],
+			"sid": 254385738038380
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 120616493217515,
+					"parameters": {
+						"object": "btn_materi",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 987674263899124,
+					"parameters": {
+						"layout": "Menu Materi Layout"
+					}
+				}
+			],
+			"sid": 441088640443618
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 485278515272942,
+					"parameters": {
+						"object": "btn_memory",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 507016888660202,
+					"parameters": {
+						"layout": "Menu Memory Layout"
+					}
+				}
+			],
+			"sid": 573720983437076
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 913672284166180,
+					"parameters": {
+						"object": "btn_quiz",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 293751057855579,
+					"parameters": {
+						"layout": "Menu Quiz Layout"
+					}
+				}
+			],
+			"sid": 657708805075952
+		}
+	],
+	"sid": 618233793011422
+}

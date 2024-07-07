@@ -1,0 +1,17 @@
+{
+	"name": "nyawa",
+	"plugin-id": "Text",
+	"sid": 112250582903149,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "type",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 190046561008012
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

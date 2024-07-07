@@ -1,0 +1,508 @@
+{
+	"name": "Utama ES",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 198655826242733,
+					"parameters": {
+						"object": "btn_carabermain",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btn_carabermain",
+					"sid": 736586006461606,
+					"parameters": {
+						"width": "200",
+						"height": "200"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 743197084941845,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "btn_carabermain",
+					"sid": 692541960117632,
+					"parameters": {
+						"width": "220",
+						"height": "220"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 956034512861339,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 493445463837109,
+					"parameters": {
+						"layout": "Cara Bermain Layout"
+					}
+				}
+			],
+			"sid": 263705717191013
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 577775227779617,
+					"parameters": {
+						"object": "btn_tentanggame",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btn_tentanggame",
+					"sid": 173305544894846,
+					"parameters": {
+						"width": "200",
+						"height": "200"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 612017888838660,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "btn_tentanggame",
+					"sid": 179823182875024,
+					"parameters": {
+						"width": "220",
+						"height": "220"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 621896803657484,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 892515511603818,
+					"parameters": {
+						"layout": "Tentang Game Layout"
+					}
+				}
+			],
+			"sid": 389807069141499
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 702080822988521,
+					"parameters": {
+						"object": "btn_credit",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btn_credit",
+					"sid": 990525805692643,
+					"parameters": {
+						"width": "200",
+						"height": "200"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 813938295740061,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "btn_credit",
+					"sid": 319580475488313,
+					"parameters": {
+						"width": "220",
+						"height": "220"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 626372766796619,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 992769076197873,
+					"parameters": {
+						"layout": "Credit Layout"
+					}
+				}
+			],
+			"sid": 460642236637074
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 662836755702345,
+					"parameters": {
+						"object": "btn_play",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 951206223303319,
+					"parameters": {
+						"layout": "Menu Layout"
+					}
+				}
+			],
+			"sid": 133876227228453
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 649874264131181
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "Sprite26",
+					"sid": 252068960259381,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "btn_carabermain",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "Sprite27",
+					"sid": 718509969880349,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "btn_tentanggame",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "Sprite28",
+					"sid": 370030177563037,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "btn_credit",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 806113980872965
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 730132950520533,
+					"parameters": {
+						"object": "btn_carabermain"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite26",
+					"sid": 770028815329898,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 705872667375678
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 648221740074731
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite26",
+					"sid": 582706322084669,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 672704220508047
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 909529928591626,
+					"parameters": {
+						"object": "btn_tentanggame"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite27",
+					"sid": 386613047497099,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 153412979009032
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 887662289596044
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite27",
+					"sid": 142292321304396,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 357575292141845
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 157596233803274,
+					"parameters": {
+						"object": "btn_credit"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite28",
+					"sid": 867126539866798,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 717923466672056
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 650573061428424
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite28",
+					"sid": 509372790858026,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 703868893662333
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-hold",
+					"objectClass": "Touch",
+					"sid": 709033015222053
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite26",
+					"sid": 464699950581507,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 867278577029895
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-hold",
+					"objectClass": "Touch",
+					"sid": 989454407263989
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite27",
+					"sid": 239237882163226,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 479835789065084
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-hold",
+					"objectClass": "Touch",
+					"sid": 481335532212090
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite27",
+					"sid": 228898076519020,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 161098478115928
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 639460650922066
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 224449308705329,
+					"parameters": {
+						"audio-file": "merx-market-song-33936",
+						"loop": "looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"music\""
+					}
+				}
+			],
+			"sid": 230857738425172,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-tag-playing",
+							"objectClass": "Audio",
+							"sid": 679774258254240,
+							"parameters": {
+								"tag": "\"music\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 345516552671393,
+					"disabled": true
+				}
+			]
+		}
+	],
+	"sid": 510922116495456
+}

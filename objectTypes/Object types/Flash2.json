@@ -1,0 +1,32 @@
+{
+	"name": "Flash2",
+	"plugin-id": "TiledBg",
+	"sid": 366727362632978,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "beh_tween",
+			"sid": 328087584080600
+		},
+		{
+			"behaviorId": "Fade",
+			"name": "beh_fade",
+			"sid": 988443789924879
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 16,
+		"height": 16,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 2839034,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

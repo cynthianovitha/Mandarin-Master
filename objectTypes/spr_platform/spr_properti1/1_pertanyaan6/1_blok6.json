@@ -1,0 +1,21 @@
+{
+	"name": "1_blok6",
+	"plugin-id": "TiledBg",
+	"sid": 865990029705764,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 250,
+		"height": 250,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 6647829,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

@@ -1,0 +1,72 @@
+{
+	"name": "btn_game4",
+	"plugin-id": "Sprite",
+	"sid": 910966264202185,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "btn_gameX",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 334720641333154
+		},
+		{
+			"name": "btn_gameY",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 311946853296934
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 976293156754861
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 134,
+						"height": 134,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9293366,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 134,
+						"height": 134,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3449888,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 528195455569525,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

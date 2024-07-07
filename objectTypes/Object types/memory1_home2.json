@@ -1,0 +1,27 @@
+{
+	"name": "memory1_home2",
+	"plugin-id": "TiledBg",
+	"sid": 787037434400221,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 962776304030495
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 250,
+		"height": 250,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 6418874,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

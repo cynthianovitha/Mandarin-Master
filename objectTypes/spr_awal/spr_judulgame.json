@@ -1,0 +1,56 @@
+{
+	"name": "spr_judulgame",
+	"plugin-id": "Sprite",
+	"sid": 362029146732182,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 597,
+						"height": 229,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4591847,
+						"collisionPoly": {
+							"points": [
+								0.8542713567839196,
+								0,
+								0.9782244556113903,
+								0.1703056768558952,
+								0.9966499162479062,
+								0.4672489082969432,
+								0.8224455611390284,
+								0.9956331877729258,
+								0.12227805695142378,
+								0.982532751091703,
+								0,
+								0.4497816593886463,
+								0.020100502512562814,
+								0.008733624454148471
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 302610773768536,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

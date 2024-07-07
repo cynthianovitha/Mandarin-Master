@@ -1,0 +1,2743 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 39700,
+	"name": "Mandarin Master Game",
+	"runtime": "c3",
+	"useWorker": "auto",
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "AJAX",
+			"name": "AJAX",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "AdvancedRandom",
+			"name": "Advanced Random",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Arr",
+			"name": "Array",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Browser",
+			"name": "Browser",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "NinePatch",
+			"name": "9-patch",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Particles",
+			"name": "Particles",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "PlatformInfo",
+			"name": "Platform info",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Spritefont2",
+			"name": "Sprite font",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Touch",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "DragnDrop",
+			"name": "Drag & Drop",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Fade",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Flash",
+			"name": "Flash",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Platform",
+			"name": "Platform",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Sin",
+			"name": "Sine",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Tween",
+			"name": "Tween",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "depthstripe",
+			"name": "Depth stripe",
+			"author": "Scirra",
+			"bundled": false
+		}
+	],
+	"uniqueId": "0ymcxle753q",
+	"objectTypes": {
+		"items": [],
+		"subfolders": [
+			{
+				"items": [
+					"bg_blur",
+					"bg_nonblur",
+					"bg_platform1",
+					"bg_platform2",
+					"TiledBackground",
+					"Sprite29"
+				],
+				"subfolders": [],
+				"name": "bg"
+			},
+			{
+				"items": [
+					"btn_back",
+					"btn_carabermain",
+					"btn_credit",
+					"btn_materi",
+					"btn_memory",
+					"btn_platformer",
+					"btn_play",
+					"btn_quiz",
+					"btn_tentanggame",
+					"btn_level1",
+					"btn_level2",
+					"btn_level3",
+					"btn_level4",
+					"btn_level5",
+					"Sprite26",
+					"Sprite28",
+					"Sprite27"
+				],
+				"subfolders": [],
+				"name": "btn_awal"
+			},
+			{
+				"items": [
+					"spr_carabermain",
+					"spr_credit",
+					"spr_judulgame",
+					"spr_loading",
+					"spr_loadingbar",
+					"spr_tentanggame",
+					"spr_platformer",
+					"girl_start",
+					"btn",
+					"btn2",
+					"btn3",
+					"btn4",
+					"btn5",
+					"DesignGame",
+					"DesignGame2",
+					"Sprite20",
+					"Sprite21",
+					"Sprite22",
+					"Sprite23",
+					"btn1",
+					"btn2_",
+					"Text",
+					"Text2",
+					"g",
+					"g2",
+					"g3",
+					"g4",
+					"g5",
+					"Sprite30",
+					"btn3_",
+					"btn4_",
+					"btn6_",
+					"btn8",
+					"btn5_",
+					"btn7"
+				],
+				"subfolders": [],
+				"name": "spr_awal"
+			},
+			{
+				"items": [],
+				"subfolders": [
+					{
+						"items": [
+							"fish",
+							"fly",
+							"bat",
+							"frog",
+							"girl"
+						],
+						"subfolders": [],
+						"name": "spr_player&enemy"
+					},
+					{
+						"items": [
+							"grass_center",
+							"grass_cliff_left",
+							"grass_cliff_left_alt",
+							"grass_cliff_right",
+							"grass_cliff_right_alt",
+							"grass_half",
+							"grass_half_left",
+							"grass_half_mid",
+							"grass_half_right",
+							"grass_hill_right2",
+							"grass_hill_left2",
+							"grass_hill_left",
+							"grass_hill_right",
+							"grass_mid",
+							"liquid_water",
+							"liquid_water_top",
+							"bush",
+							"plant",
+							"box",
+							"box_alt",
+							"fence",
+							"fence_broken",
+							"ladder_top",
+							"sign_right",
+							"flag_green",
+							"cactus",
+							"hud_heart",
+							"box_score",
+							"btn_home",
+							"btn_up",
+							"btn_pause",
+							"star0",
+							"star1",
+							"star2",
+							"star3",
+							"btn_right",
+							"btn_left",
+							"nyawa",
+							"score",
+							"score_game_over",
+							"score_level_complete",
+							"door",
+							"box_game_over",
+							"box_level_complete",
+							"level_complete_blok",
+							"btn_gameover_home",
+							"btn_gameover_refresh",
+							"btn_levelcomp_home",
+							"btn_levelcomp_next",
+							"btn_levelcomp_refresh",
+							"btn_left_transparent",
+							"btn_right_transparent",
+							"btn_up_transparent",
+							"spr_solid"
+						],
+						"subfolders": [
+							{
+								"items": [
+									"1_pertanyaan1",
+									"1_blok1",
+									"1_jawaban1_false",
+									"1_jawaban1_right",
+									"1_false1",
+									"1_right1"
+								],
+								"subfolders": [],
+								"name": "1_pertanyaan1"
+							},
+							{
+								"items": [
+									"1_pertanyaan9",
+									"1_right9",
+									"1_false9",
+									"1_blok9",
+									"1_jawaban9_right",
+									"1_jawaban9_false"
+								],
+								"subfolders": [],
+								"name": "1_pertanyaan9"
+							},
+							{
+								"items": [
+									"1_right8",
+									"1_false8",
+									"1_blok8",
+									"1_jawaban8_right",
+									"1_jawaban8_false",
+									"1_pertanyaan8"
+								],
+								"subfolders": [],
+								"name": "1_pertanyaan8"
+							},
+							{
+								"items": [
+									"1_pertanyaan7",
+									"1_right7",
+									"1_false7",
+									"1_blok7",
+									"1_jawaban7_right",
+									"1_jawaban7_false"
+								],
+								"subfolders": [],
+								"name": "1_pertanyaan7"
+							},
+							{
+								"items": [
+									"1_pertanyaan10",
+									"1_right10",
+									"1_false10",
+									"1_blok10",
+									"1_jawaban10_right",
+									"1_jawaban10_false"
+								],
+								"subfolders": [],
+								"name": "1_pertanyaan10"
+							},
+							{
+								"items": [
+									"1_pertanyaan2",
+									"1_blok2",
+									"1_jawaban2_false",
+									"1_jawaban2_right",
+									"1_false2",
+									"1_right2"
+								],
+								"subfolders": [],
+								"name": "1_pertanyaan2"
+							},
+							{
+								"items": [
+									"1_false3",
+									"1_blok3",
+									"1_jawaban3_right",
+									"1_jawaban3_false",
+									"1_pertanyaan3",
+									"1_right3"
+								],
+								"subfolders": [],
+								"name": "1_pertanyaan3"
+							},
+							{
+								"items": [
+									"1_right4",
+									"1_false4",
+									"1_blok4",
+									"1_jawaban4_right",
+									"1_jawaban4_false",
+									"1_pertanyaan4"
+								],
+								"subfolders": [],
+								"name": "1_pertanyaan4"
+							},
+							{
+								"items": [
+									"1_right6",
+									"1_false6",
+									"1_jawaban6_false",
+									"1_jawaban6_right",
+									"1_blok6",
+									"1_pertanyaan6"
+								],
+								"subfolders": [],
+								"name": "1_pertanyaan6"
+							},
+							{
+								"items": [
+									"1_blok5",
+									"1_jawaban5_right",
+									"1_jawaban5_false",
+									"1_pertanyaan5",
+									"1_right5",
+									"1_false5"
+								],
+								"subfolders": [],
+								"name": "1_pertanyaan5"
+							}
+						],
+						"name": "spr_properti1"
+					},
+					{
+						"items": [
+							"spr_solid2",
+							"bush2",
+							"shroom_brown_alt_left",
+							"shroom_brown_alt_mid",
+							"shroom_brown_alt_right",
+							"shroom_brown_alt_spots_left",
+							"shroom_brown_alt_spots_mid",
+							"shroom_brown_alt_spots_right",
+							"shroom_red_alt_left",
+							"shroom_red_alt_mid",
+							"shroom_red_alt_mid_alt",
+							"shroom_red_alt_right",
+							"shroom_red_left",
+							"shroom_red_mid",
+							"shroom_red_right",
+							"sprite",
+							"sprite10",
+							"sprite11",
+							"sprite12",
+							"sprite13",
+							"sprite14",
+							"sprite15",
+							"sprite16",
+							"sprite17",
+							"sprite18",
+							"sprite19",
+							"sprite2",
+							"sprite3",
+							"sprite4",
+							"sprite5",
+							"sprite6",
+							"sprite7",
+							"sprite8",
+							"sprite9",
+							"stem",
+							"stemBaseAlt",
+							"stemCrown",
+							"stemShroom",
+							"stemTopAlt",
+							"stemVine",
+							"tallShroom_brown",
+							"tallShroom_red",
+							"tallShroom_tan",
+							"TiledBackground5",
+							"tinyShroom_brown",
+							"TiledBackground8",
+							"btn_left_tranparent2",
+							"btn_right_transparent2",
+							"btn_up_tranparent2"
+						],
+						"subfolders": [
+							{
+								"items": [
+									"2_blok1",
+									"2_false1",
+									"2_jawaban1_false",
+									"2_jawaban1_right",
+									"2_pertanyaan1",
+									"2_right1"
+								],
+								"subfolders": [],
+								"name": "2_pertanyaan1"
+							},
+							{
+								"items": [
+									"2_blok2",
+									"2_false2",
+									"2_pertanyaan2",
+									"2_jawaban2_false",
+									"2_jawaban2_right",
+									"2_right2"
+								],
+								"subfolders": [],
+								"name": "2_pertanyaan2"
+							},
+							{
+								"items": [
+									"2_blok3",
+									"2_false3",
+									"2_pertanyaan3",
+									"2_jawaban3_false",
+									"2_jawaban3_right",
+									"2_right3"
+								],
+								"subfolders": [],
+								"name": "2_pertanyaan3"
+							},
+							{
+								"items": [
+									"2_blok4",
+									"2_false4",
+									"2_jawaban4_false",
+									"2_jawaban4_right",
+									"2_pertanyaan4",
+									"2_right4"
+								],
+								"subfolders": [],
+								"name": "2_pertanyaan4"
+							},
+							{
+								"items": [
+									"2_blok5",
+									"2_false5",
+									"2_jawaban5_false",
+									"2_jawaban5_right",
+									"2_pertanyaan5",
+									"2_right5"
+								],
+								"subfolders": [],
+								"name": "2_pertanyaan5"
+							},
+							{
+								"items": [
+									"2_blok6",
+									"2_false6",
+									"2_jawaban6_false",
+									"2_jawaban6_right",
+									"2_pertanyaan6",
+									"2_right6"
+								],
+								"subfolders": [],
+								"name": "2_pertanyaan6"
+							},
+							{
+								"items": [
+									"2_blok7",
+									"2_false7",
+									"2_jawaban7_false",
+									"2_jawaban7_right",
+									"2_pertanyaan7",
+									"2_right7"
+								],
+								"subfolders": [],
+								"name": "2_pertanyaan7"
+							},
+							{
+								"items": [
+									"2_blok8",
+									"2_false8",
+									"2_jawaban8_false",
+									"2_jawaban8_right",
+									"2_pertanyaan8",
+									"2_right8"
+								],
+								"subfolders": [],
+								"name": "2_pertanyaan8"
+							},
+							{
+								"items": [
+									"2_blok9",
+									"2_false9",
+									"2_jawaban9_false",
+									"2_jawaban9_right",
+									"2_pertanyaan9",
+									"2_right9"
+								],
+								"subfolders": [],
+								"name": "2_pertanyaan9"
+							},
+							{
+								"items": [
+									"2_blok10",
+									"2_false10",
+									"2_jawaban10_false",
+									"2_jawaban10_right",
+									"2_pertanyaan10",
+									"2_right10"
+								],
+								"subfolders": [],
+								"name": "2_pertanyaan10"
+							}
+						],
+						"name": "spr_properti2"
+					},
+					{
+						"items": [
+							"tundraCenter",
+							"tundraCliffLeft",
+							"tundraCliffLeftAlt",
+							"tundraCliffRight",
+							"tundraCliffRightAlt",
+							"tundraHalf",
+							"tundraHalfLeft",
+							"tundraHalfMid",
+							"tundraHalfRight",
+							"tundraHillLeft",
+							"tundraHillLeft2",
+							"tundraHillRight",
+							"tundraHillRight2",
+							"tundraMid",
+							"caneGreen",
+							"caneGreenSmall",
+							"caneGreenTop",
+							"caneRed",
+							"caneRedSmall",
+							"caneRedTop",
+							"iglooAlt",
+							"iglooDoor",
+							"iglooRoof",
+							"iglooRoofLeft",
+							"iglooRoofRight",
+							"TiledBackground2",
+							"TiledBackground3",
+							"TiledBackground4",
+							"TiledBackground6",
+							"TiledBackground7",
+							"TiledBackground9",
+							"tree",
+							"treeBranchesLeft",
+							"treeBranchesRight",
+							"treeBranchesSnowLeft",
+							"treeBranchesSnowRight",
+							"treeTrunkBottom",
+							"TiledBackground10"
+						],
+						"subfolders": [],
+						"name": "spr_properti3"
+					}
+				],
+				"name": "spr_platform"
+			},
+			{
+				"items": [
+					"Keyboard",
+					"Touch",
+					"Mouse",
+					"AJAX",
+					"Audio"
+				],
+				"subfolders": [],
+				"name": "fungsi"
+			},
+			{
+				"items": [
+					"Card",
+					"CardShadow",
+					"SelectedCards",
+					"Browser",
+					"AdvancedRandom",
+					"GlowParticles",
+					"Flash",
+					"Table",
+					"CardsRandomizer",
+					"Text4",
+					"SelectedArea",
+					"PlatformInfo",
+					"Text5",
+					"BINTANG",
+					"DesignGame3",
+					"DesignGame4",
+					"DesignGame444",
+					"g33Copy",
+					"g33Copy2",
+					"g6",
+					"g7",
+					"g8",
+					"g9",
+					"memory1_home",
+					"memory1_nextlevel",
+					"memory1_restart",
+					"memory1home",
+					"memory1restart",
+					"path",
+					"path2",
+					"path3",
+					"path4",
+					"question_quiz",
+					"rect165u",
+					"Sprite100",
+					"Sprite101",
+					"Sprite102",
+					"Sprite103",
+					"Sprite104",
+					"Sprite105",
+					"Sprite106",
+					"Sprite107",
+					"Sprite108",
+					"Sprite109",
+					"Sprite110",
+					"Sprite111",
+					"Sprite112",
+					"Sprite113",
+					"Sprite114",
+					"Sprite115",
+					"Sprite116",
+					"Sprite117",
+					"Sprite118",
+					"Sprite119",
+					"Sprite120",
+					"Sprite121",
+					"Sprite122",
+					"Sprite123",
+					"Sprite124",
+					"Sprite125",
+					"Sprite126",
+					"Sprite127",
+					"Sprite128",
+					"Sprite129",
+					"Sprite130",
+					"Sprite131",
+					"Sprite132",
+					"Sprite133",
+					"Sprite134",
+					"Sprite135",
+					"Sprite136",
+					"Sprite137",
+					"Sprite138",
+					"Sprite139",
+					"Sprite140",
+					"Sprite141",
+					"Sprite142",
+					"Sprite143",
+					"Sprite144",
+					"Sprite145",
+					"Sprite146",
+					"Sprite147",
+					"Sprite148",
+					"Sprite149",
+					"Sprite150",
+					"Sprite151",
+					"Sprite152",
+					"Sprite153",
+					"Sprite154",
+					"Sprite155",
+					"Sprite156",
+					"Sprite157",
+					"Sprite158",
+					"Sprite159",
+					"Sprite160",
+					"Sprite161",
+					"Sprite162",
+					"Sprite163",
+					"Sprite164",
+					"Sprite165",
+					"Sprite166",
+					"Sprite167",
+					"Sprite168",
+					"Sprite169",
+					"Sprite24",
+					"Sprite25",
+					"Sprite31",
+					"Sprite32",
+					"Sprite33",
+					"Sprite34",
+					"Sprite35",
+					"Sprite36",
+					"Sprite37",
+					"Sprite38",
+					"Sprite39",
+					"Sprite40",
+					"Sprite41",
+					"Sprite42",
+					"Sprite43",
+					"Sprite44",
+					"Sprite45",
+					"Sprite46",
+					"Sprite47",
+					"Sprite48",
+					"Sprite49",
+					"Sprite50",
+					"Sprite51",
+					"Sprite52",
+					"Sprite53",
+					"Sprite54",
+					"Sprite55",
+					"Sprite56",
+					"Sprite57",
+					"Sprite58",
+					"Sprite59",
+					"Sprite60",
+					"Sprite61",
+					"Sprite62",
+					"Sprite63",
+					"Sprite64",
+					"Sprite65",
+					"Sprite66",
+					"Sprite67",
+					"Sprite68",
+					"Sprite69",
+					"Sprite70",
+					"Sprite71",
+					"Sprite72",
+					"Sprite73",
+					"Sprite74",
+					"Sprite75",
+					"Sprite76",
+					"Sprite77",
+					"Sprite78",
+					"Sprite79",
+					"Sprite80",
+					"Sprite81",
+					"Sprite82",
+					"Sprite83",
+					"Sprite84",
+					"Sprite85",
+					"Sprite86",
+					"Sprite87",
+					"Sprite88",
+					"Sprite89",
+					"Sprite90",
+					"Sprite91",
+					"Sprite92",
+					"Sprite93",
+					"Sprite94",
+					"Sprite95",
+					"Sprite96",
+					"Sprite97",
+					"Sprite98",
+					"Sprite99",
+					"Text10",
+					"Text11",
+					"Text12",
+					"Text13",
+					"Text3",
+					"TiledBackground11",
+					"TiledBackground12",
+					"TiledBackground13"
+				],
+				"subfolders": [
+					{
+						"items": [
+							"Table3",
+							"bg_blur3",
+							"btn_home3",
+							"btn_pause3",
+							"g12",
+							"TiledBackground16",
+							"g13",
+							"DesignGame7",
+							"DesignGame8",
+							"SelectedArea3",
+							"Text7",
+							"Card3",
+							"TiledBackground17",
+							"rect165u3",
+							"star8",
+							"star9",
+							"star10",
+							"star11",
+							"memory1_nextlevel3",
+							"memory1restart3",
+							"memory1_home3",
+							"path6",
+							"memory1home3",
+							"memory1_restart3",
+							"CardsRandomizer3",
+							"SelectedCards3",
+							"CardShadow3",
+							"GlowParticles3",
+							"Flash3"
+						],
+						"subfolders": [],
+						"name": "Object types"
+					},
+					{
+						"items": [
+							"Table4",
+							"bg_blur4",
+							"btn_home4",
+							"btn_pause4",
+							"g14",
+							"TiledBackground18",
+							"g15",
+							"DesignGame9",
+							"DesignGame44",
+							"SelectedArea4",
+							"Text8",
+							"Card4",
+							"TiledBackground19",
+							"rect165u4",
+							"star12",
+							"star13",
+							"star14",
+							"star15",
+							"memory1_nextlevel4",
+							"memory1restart4",
+							"memory1_home4",
+							"path7",
+							"memory1home4",
+							"memory1_restart4",
+							"CardsRandomizer4",
+							"SelectedCards4",
+							"CardShadow4",
+							"GlowParticles4",
+							"Flash4"
+						],
+						"subfolders": [],
+						"name": "Object types2"
+					},
+					{
+						"items": [
+							"Table5",
+							"bg_blur5",
+							"btn_home5",
+							"btn_pause5",
+							"g16",
+							"TiledBackground20",
+							"g17",
+							"DesignGame555",
+							"DesignGame55",
+							"SelectedArea5",
+							"Text9",
+							"Card5",
+							"TiledBackground21",
+							"rect165u5",
+							"star16",
+							"star17",
+							"star18",
+							"star19",
+							"memory1_nextlevel5",
+							"memory1restart5",
+							"memory1_home5",
+							"path8",
+							"memory1home5",
+							"memory1_restart5",
+							"CardsRandomizer5",
+							"SelectedCards5",
+							"CardShadow5",
+							"GlowParticles5",
+							"Flash5"
+						],
+						"subfolders": [],
+						"name": "Object types3"
+					}
+				],
+				"name": "spr_memory"
+			},
+			{
+				"items": [
+					"Table2",
+					"bg_blur2",
+					"btn_home2",
+					"btn_pause2",
+					"g10",
+					"TiledBackground14",
+					"g11",
+					"DesignGame5",
+					"DesignGame6",
+					"SelectedArea2",
+					"Text6",
+					"Card2",
+					"TiledBackground15",
+					"rect165u2",
+					"star4",
+					"star5",
+					"star6",
+					"star7",
+					"memory1_nextlevel2",
+					"memory1restart2",
+					"memory1_home2",
+					"path5",
+					"memory1home2",
+					"memory1_restart2",
+					"CardsRandomizer2",
+					"SelectedCards2",
+					"CardShadow2",
+					"GlowParticles2",
+					"Flash2"
+				],
+				"subfolders": [],
+				"name": "Object types"
+			},
+			{
+				"items": [
+					"jawaban_quiz2",
+					"soal_quiz2",
+					"jawaban_quiz3",
+					"soal_quiz3"
+				],
+				"subfolders": [
+					{
+						"items": [
+							"btn_siap",
+							"soal_quiz1",
+							"jawaban_quiz11",
+							"btn_pauses",
+							"ui_pause",
+							"btn_validation",
+							"quiz1",
+							"SpriteFont",
+							"btn_game",
+							"score_final",
+							"bg_blur6",
+							"btn_back2",
+							"Sprite170",
+							"g18",
+							"g19",
+							"g20",
+							"g21",
+							"g22",
+							"TiledBackground22",
+							"g23",
+							"DesignGame10",
+							"g24",
+							"path9",
+							"star20",
+							"star21",
+							"star22",
+							"star23",
+							"path10",
+							"1home",
+							"1restart",
+							"TiledBackground23",
+							"rect165u6",
+							"1_nextlevel",
+							"1_restart",
+							"1_home"
+						],
+						"subfolders": [],
+						"name": "Object types"
+					},
+					{
+						"items": [
+							"btn_siap2",
+							"btn_pauses2",
+							"ui_pause2",
+							"btn_validation2",
+							"quiz2",
+							"SpriteFont2",
+							"btn_game2",
+							"score_final2",
+							"bg_blur7",
+							"btn_back3",
+							"Sprite171",
+							"g25",
+							"g26",
+							"g27",
+							"g28",
+							"g29",
+							"TiledBackground24",
+							"g30",
+							"DesignGame11",
+							"g31",
+							"path11",
+							"star24",
+							"star25",
+							"star26",
+							"star27",
+							"path12",
+							"1home2",
+							"1restart2",
+							"TiledBackground25",
+							"rect165u7",
+							"1_nextlevel2",
+							"1_restart2",
+							"1_home2"
+						],
+						"subfolders": [],
+						"name": "Object types2"
+					},
+					{
+						"items": [
+							"btn_siap3",
+							"btn_pauses3",
+							"ui_pause3",
+							"btn_validation3",
+							"quiz3",
+							"SpriteFont3",
+							"btn_game3",
+							"score_final3",
+							"bg_blur8",
+							"btn_back4",
+							"Sprite172",
+							"g32",
+							"g33",
+							"g34",
+							"g35",
+							"g36",
+							"TiledBackground26",
+							"g37",
+							"DesignGame12",
+							"g38",
+							"path13",
+							"star28",
+							"star29",
+							"star30",
+							"star31",
+							"path14",
+							"1home3",
+							"1restart3",
+							"TiledBackground27",
+							"rect165u8",
+							"1_nextlevel3",
+							"1_restart3",
+							"1_home3"
+						],
+						"subfolders": [],
+						"name": "Object types3"
+					},
+					{
+						"items": [
+							"btn_siap4",
+							"soal_quiz4",
+							"jawaban_quiz4",
+							"btn_pauses4",
+							"ui_pause4",
+							"btn_validation4",
+							"quiz4",
+							"SpriteFont4",
+							"btn_game4",
+							"score_final4",
+							"bg_blur9",
+							"btn_back5",
+							"Sprite173",
+							"g39",
+							"g40",
+							"g41",
+							"g42",
+							"g43",
+							"TiledBackground28",
+							"g44",
+							"DesignGame13",
+							"g45",
+							"path15",
+							"star32",
+							"star33",
+							"star34",
+							"star35",
+							"path16",
+							"1home4",
+							"1restart4",
+							"TiledBackground29",
+							"rect165u9",
+							"1_nextlevel4",
+							"1_restart4",
+							"1_home4"
+						],
+						"subfolders": [],
+						"name": "Object types4"
+					},
+					{
+						"items": [
+							"btn_siap5",
+							"soal_quiz5",
+							"jawaban_quiz5",
+							"btn_pauses5",
+							"ui_pause5",
+							"btn_validation5",
+							"quiz5",
+							"SpriteFont5",
+							"btn_game5",
+							"score_final5",
+							"bg_blur10",
+							"btn_back6",
+							"Sprite174",
+							"g46",
+							"g47",
+							"g48",
+							"g49",
+							"g50",
+							"TiledBackground30",
+							"g51",
+							"DesignGame14",
+							"g52",
+							"path17",
+							"star36",
+							"star37",
+							"star38",
+							"star39",
+							"path18",
+							"1home5",
+							"1restart5",
+							"TiledBackground31",
+							"rect165u10",
+							"1_nextlevel5",
+							"1_restart5",
+							"1_home5"
+						],
+						"subfolders": [],
+						"name": "Object types5"
+					}
+				],
+				"name": "spr_quiz"
+			}
+		]
+	},
+	"autosaveData": null,
+	"containers": [
+		{
+			"members": [
+				"Card",
+				"CardShadow"
+			]
+		},
+		{
+			"members": [
+				"Card2",
+				"CardShadow2"
+			]
+		},
+		{
+			"members": [
+				"Card3",
+				"CardShadow3"
+			]
+		},
+		{
+			"members": [
+				"Card4",
+				"CardShadow4"
+			]
+		},
+		{
+			"members": [
+				"Card5",
+				"CardShadow5"
+			]
+		}
+	],
+	"families": {
+		"items": [],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [],
+		"subfolders": [
+			{
+				"items": [
+					"Splashscreen Layout",
+					"Utama Layout",
+					"Cara Bermain Layout",
+					"Tentang Game Layout",
+					"Credit Layout",
+					"Menu Layout"
+				],
+				"subfolders": [],
+				"name": "Awal"
+			},
+			{
+				"items": [
+					"Menu Materi Layout",
+					"Materi1  Layout",
+					"Materi2 Layout",
+					"Materi3 Layout",
+					"Materi4 Layout",
+					"Materi5 Layout"
+				],
+				"subfolders": [],
+				"name": "Materi"
+			},
+			{
+				"items": [
+					"Menu Platformer Layout",
+					"Platformer 1 Layout",
+					"Platformer 2 Layout",
+					"Platformer 3 Layout",
+					"Platformer 4 Layout",
+					"Platformer 5 Layout"
+				],
+				"subfolders": [],
+				"name": "Platformer"
+			},
+			{
+				"items": [
+					"Menu Memory Layout",
+					"Memory1 Layout",
+					"Mem1 Layout",
+					"Memory2 Layout",
+					"Mem2 Layout",
+					"Memory3 Layout",
+					"Memory4 Layout",
+					"Mem3 Layout",
+					"Mem4 Layout",
+					"Mem5 Layout",
+					"Memory5 Layout"
+				],
+				"subfolders": [],
+				"name": "Memory"
+			},
+			{
+				"items": [
+					"Menu Quiz Layout",
+					"Quiz1 Layout",
+					"Quiz2 Layout",
+					"Quiz3 Layout",
+					"Quiz4 Layout",
+					"Quiz5 Layout"
+				],
+				"subfolders": [],
+				"name": "Quiz"
+			}
+		]
+	},
+	"eventSheets": {
+		"items": [],
+		"subfolders": [
+			{
+				"items": [
+					"Utama ES",
+					"Cara Bermain ES",
+					"Tentang Game ES",
+					"Credit ES",
+					"Menu ES",
+					"Splashscreen ES"
+				],
+				"subfolders": [],
+				"name": "Awal"
+			},
+			{
+				"items": [
+					"Menu Materi ES",
+					"Materi1 ES",
+					"Materi2 ES",
+					"Materi3 ES",
+					"Materi4 ES",
+					"Materi5 ES"
+				],
+				"subfolders": [],
+				"name": "Materi"
+			},
+			{
+				"items": [
+					"Menu Platformer ES",
+					"Platformer 1 ES",
+					"Pause Platformer ES",
+					"Platformer 2 ES",
+					"Platformer 3 ES",
+					"Platformer5 ES",
+					"Platformer 4 ES"
+				],
+				"subfolders": [],
+				"name": "Platformer"
+			},
+			{
+				"items": [
+					"Menu Memory ES",
+					"Memory1 ES",
+					"Memory 2 ES",
+					"Memory 3 ES",
+					"Memory 4 ES",
+					"Memory5 ES"
+				],
+				"subfolders": [],
+				"name": "Memory"
+			},
+			{
+				"items": [
+					"Menu Quiz ES",
+					"Quiz1 ES",
+					"Quiz2 ES",
+					"Quiz3 ES",
+					"Quiz4 ES",
+					"Quiz5 ES"
+				],
+				"subfolders": [],
+				"name": "Quiz"
+			}
+		]
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [],
+			"subfolders": [
+				{
+					"items": [
+						{
+							"name": "1.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 282885032427135,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "bahu.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 765655285935725,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "gigi.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 655882146360143,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "kepala.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 735399459336393,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "lidah.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 618864114353377,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "mulut.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 709575041286555,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "perut.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 721951118331492,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "siku.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 593030171293427,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "tangan.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 208999452450880,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "telinga.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 509148835654335,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "wajah.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 346759441967796,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "2.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 368934702965197,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "3.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 218983749796053,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "4.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 250268178192198,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "5.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 936370066245454,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "6.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 412776442764935,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "7.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 366866024969197,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "8.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 859375124583852,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "9.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 201844251045489,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "10.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 178959856841373,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "11.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 279311519350226,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "12.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 415603113978043,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "13.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 953537435446093,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "14.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 687888337524946,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "15.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 214906570932027,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "16.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 487845116044138,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "17.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 358880070756272,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "18.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 466533152485015,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "19.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 610483685482286,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "20.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 733590600070274,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "Bawah.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 978465835818992,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "Besar.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 856570469854093,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "dari.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 742719762997198,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "daripada.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 930958531810582,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "di.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 493737202869749,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "Kanan.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 137976696498475,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "kecil.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 779686444578966,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "kiri.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 772039383404451,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "untuk.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 614555699758486,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "atas.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 737356250554170,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "angin.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 381540785402485,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "api.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 616934130894932,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "awan.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 296948925902451,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "bulan.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 848212425059902,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "danau.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 713852938867569,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "gunung.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 420766736241998,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "hujan.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 472664055001606,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "laut.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 265497045227758,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "matahari.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 916273211912084,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "petir.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 714781285297826,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "ayam.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 705329697128902,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "babi.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 325155453694527,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "bebek.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 243205265434793,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "burung.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 768744237966383,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "ikan.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 413761092494228,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "kambing.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 982534390184420,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "kucing.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 361317982089597,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "sapi.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 424049767534976,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "ular.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 817676049798264,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "anjing.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 753872142610030,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "100.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 531075626078095,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "23.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 779240408441746,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "21.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 383214225676987,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "22.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 542538141687114,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "24.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 211728906898859,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "25.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 410735262242321,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "26.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 734134909079321,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "27.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 691328148161885,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "28.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 495316392360245,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "29.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 755602919001345,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "30.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 309499441186415,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "31.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 415410355117893,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "32.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 688761515124371,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "33.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 755567211630583,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "34.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 348230455353030,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "35.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 780728287142003,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "36.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 324566016625449,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "37.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 656424002062615,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "38.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 482296743325101,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "39.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 546351228523552,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "40.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 232759879476975,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "41.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 635060048965657,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "42.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 334406175001794,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "43.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 258048811788294,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "44.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 751599068998140,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "45.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 361635450268786,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "46.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 383439406907328,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "47.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 458429574828122,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "48.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 964929391862953,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "49.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 904937654546580,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "50.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 539698091398375,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "51.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 455376178248318,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "52.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 829377708255660,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "53.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 553309247289008,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "54.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 799294956977407,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "55.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 457914846215169,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "56.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 308666436095636,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "57.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 189965681687702,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "58.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 982805061436561,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "59.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 973555624255572,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "60.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 909908400240597,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "61.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 344490459751997,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "62.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 684736118194439,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "63.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 170047104790913,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "64.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 739129971431571,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "65.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 210264213601375,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "66.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 113234774014864,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "67.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 697625488769078,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "68.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 270740605341486,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "69.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 547656903109355,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "70.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 985414104724178,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "71.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 559687467835330,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "72.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 688799636178215,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "73.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 776014138441952,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "74.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 680711960765809,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "75.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 853151265574873,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "76.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 489538926336911,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "77.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 534352262044815,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "78.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 212507609180694,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "79.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 302320341387217,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "80.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 217477249518286,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "81.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 635565875199117,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "82.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 891600318074612,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "83.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 699532817334372,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "84.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 126315774665000,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "85.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 995500610198517,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "86.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 845223826469704,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "87.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 405147349091986,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "88.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 595394995805913,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "89.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 872992988749572,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "90.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 907415978981658,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "91.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 241250338071539,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "92.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 220073269479361,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "93.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 867767293825181,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "94.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 860557101474584,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "95.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 767899628784522,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "96.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 811979849886765,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "97.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 512939680265004,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "98.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 848979536505133,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "99.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 403896937872320,
+							"file-info": {
+								"purpose": "none"
+							}
+						}
+					],
+					"subfolders": [],
+					"name": "Materi"
+				},
+				{
+					"items": [
+						{
+							"name": "right.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 527920892068519,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "wrong.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 362247527403157,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "game-music-loop-7-145285.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 707460595716386,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "merx-market-song-33936.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 612287244120356,
+							"file-info": {
+								"purpose": "none"
+							}
+						}
+					],
+					"subfolders": [],
+					"name": "Sounds"
+				}
+			]
+		},
+		"music": {
+			"items": [],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 662068844526395,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 532204068294855,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-64.png",
+					"type": "image/png",
+					"sid": 740646911041447,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 440636516618991,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 479934000876631,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-512.png",
+					"type": "image/png",
+					"sid": 254555158851050,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 862158075962692,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [
+				{
+					"name": "banksoal.txt",
+					"type": "text/plain",
+					"sid": 904725592346229,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [
+			"Timeline 1"
+		],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"flowcharts": {
+		"items": [],
+		"subfolders": []
+	},
+	"properties": {
+		"description": "Belajar Bahasa Mandarin",
+		"version": "1.0.0.0",
+		"author": "Cynthia Novitha Sherly Yanna",
+		"authorEmail": "cynthianovitha@gmail.com",
+		"authorWebsite": "",
+		"appId": "com.mm.mandarinmaster",
+		"pixelRounding": false,
+		"zAxisScale": "normalized",
+		"fov": 0.7853981633974483,
+		"useLoaderLayout": false,
+		"fullscreenMode": "letterbox-scale",
+		"fullscreenQuality": "high",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"orientations": "landscape",
+		"webgpu": "auto",
+		"gpuPreference": "high-performance",
+		"scriptsType": "module",
+		"framerateMode": "vsync",
+		"sampling": "trilinear",
+		"downscaling": "medium",
+		"renderingMode": "auto",
+		"anisotropicFiltering": "auto",
+		"zNear": 1,
+		"zFar": 10000,
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "splash",
+		"preloadSounds": true,
+		"cordovaiOSScheme": "app",
+		"cordovaAndroidScheme": "https",
+		"autoReloadScriptsOnPreview": false,
+		"exportFileStructure": "folders",
+		"uidAllocationMode": "increment"
+	},
+	"viewportWidth": 3840,
+	"viewportHeight": 2160,
+	"firstLayout": null
+}

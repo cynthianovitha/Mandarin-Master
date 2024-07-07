@@ -1,0 +1,27 @@
+{
+	"name": "btn_up_transparent",
+	"plugin-id": "TiledBg",
+	"sid": 903958679494897,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 989265677929181
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 250,
+		"height": 250,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 819825,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

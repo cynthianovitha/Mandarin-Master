@@ -1,0 +1,15 @@
+{
+	"name": "score_level_complete",
+	"plugin-id": "Text",
+	"sid": 537962770957292,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 921894724542576
+		}
+	],
+	"effectTypes": []
+}

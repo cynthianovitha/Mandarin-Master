@@ -1,0 +1,50 @@
+{
+	"name": "g24",
+	"plugin-id": "Sprite",
+	"sid": 675529802376766,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1176,
+						"height": 86,
+						"originX": 0.5,
+						"originY": 4.168674698795181,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9382273,
+						"collisionPoly": {
+							"points": [
+								0.0017667844522968198,
+								0.012048192771084338,
+								0.9982332155477032,
+								0.012048192771084338,
+								0.9982332155477032,
+								0.9759036144578314,
+								0.0017667844522968198,
+								0.9759036144578314
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 285536383269734,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

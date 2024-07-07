@@ -1,0 +1,1045 @@
+{
+	"name": "Materi5 ES",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 424962407035418,
+					"parameters": {
+						"object": "btn_back",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btn_back",
+					"sid": 983180592139708,
+					"parameters": {
+						"width": "200",
+						"height": "200"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 258117977336063,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "btn_back",
+					"sid": 500878704290524,
+					"parameters": {
+						"width": "220",
+						"height": "220"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 832076175256932,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 915827861255696,
+					"parameters": {
+						"layout": "Menu Materi Layout"
+					}
+				}
+			],
+			"sid": 256955921161952
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 142859275986673,
+					"parameters": {
+						"object": "Sprite80",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 512873698701528,
+					"parameters": {
+						"audio-file": "anjing",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Sprite80",
+					"sid": 267668040154505,
+					"parameters": {
+						"width": "470",
+						"height": "655"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 122551263315155,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Sprite80",
+					"sid": 362328572657448,
+					"parameters": {
+						"width": "500",
+						"height": "685"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 519451185114794,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Sprite80",
+					"sid": 664105807305631,
+					"parameters": {
+						"width": "470",
+						"height": "655"
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "Sprite80",
+					"sid": 274840319527876,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"DepthStripe\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 752557525218031,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "Sprite80",
+					"sid": 260329216872989,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"DepthStripe\""
+					}
+				}
+			],
+			"sid": 894715964373371
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 537228751601528,
+					"parameters": {
+						"object": "Sprite81",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 658975381268821,
+					"parameters": {
+						"audio-file": "kucing",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Sprite81",
+					"sid": 966171487104051,
+					"parameters": {
+						"width": "470",
+						"height": "655"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 890766415888785,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Sprite81",
+					"sid": 552228759085795,
+					"parameters": {
+						"width": "500",
+						"height": "685"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 444287262340787,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Sprite81",
+					"sid": 544415733619302,
+					"parameters": {
+						"width": "470",
+						"height": "655"
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "Sprite81",
+					"sid": 191000588373219,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"DepthStripe\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 736142107989256,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "Sprite81",
+					"sid": 542343974512225,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"DepthStripe\""
+					}
+				}
+			],
+			"sid": 924576161003305
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 748583155227498,
+					"parameters": {
+						"object": "Sprite82",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 407112879404247,
+					"parameters": {
+						"audio-file": "ikan",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Sprite82",
+					"sid": 364866046396422,
+					"parameters": {
+						"width": "470",
+						"height": "655"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 602298982611122,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Sprite82",
+					"sid": 312549504672176,
+					"parameters": {
+						"width": "500",
+						"height": "685"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 601338024562237,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Sprite82",
+					"sid": 676536268690930,
+					"parameters": {
+						"width": "470",
+						"height": "655"
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "Sprite82",
+					"sid": 676689574636836,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"DepthStripe\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 998963080583709,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "Sprite82",
+					"sid": 860619733222431,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"DepthStripe\""
+					}
+				}
+			],
+			"sid": 401184038925710
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 655047090806669,
+					"parameters": {
+						"object": "Sprite83",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 539185302124982,
+					"parameters": {
+						"audio-file": "burung",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Sprite83",
+					"sid": 916720487905906,
+					"parameters": {
+						"width": "470",
+						"height": "655"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 543220249257852,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Sprite83",
+					"sid": 169755079285682,
+					"parameters": {
+						"width": "500",
+						"height": "685"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 587691396651422,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Sprite83",
+					"sid": 102217850039595,
+					"parameters": {
+						"width": "470",
+						"height": "655"
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "Sprite83",
+					"sid": 437433085225558,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"DepthStripe\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 486916924301436,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "Sprite83",
+					"sid": 653842845213031,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"DepthStripe\""
+					}
+				}
+			],
+			"sid": 319463373053422
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 302374319042538,
+					"parameters": {
+						"object": "Sprite84",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 814937415748106,
+					"parameters": {
+						"audio-file": "ayam",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Sprite84",
+					"sid": 575095341878045,
+					"parameters": {
+						"width": "470",
+						"height": "655"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 702828686689501,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Sprite84",
+					"sid": 912718585332565,
+					"parameters": {
+						"width": "500",
+						"height": "685"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 272209718067724,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Sprite84",
+					"sid": 942123173765361,
+					"parameters": {
+						"width": "470",
+						"height": "655"
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "Sprite84",
+					"sid": 201736487151407,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"DepthStripe\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 353157964016294,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "Sprite84",
+					"sid": 529128433926811,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"DepthStripe\""
+					}
+				}
+			],
+			"sid": 960700562353467
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 650133673714583,
+					"parameters": {
+						"object": "Sprite85",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 785591958919516,
+					"parameters": {
+						"audio-file": "bebek",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Sprite85",
+					"sid": 706471190209555,
+					"parameters": {
+						"width": "470",
+						"height": "655"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 392535804654087,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Sprite85",
+					"sid": 683216320426542,
+					"parameters": {
+						"width": "500",
+						"height": "685"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 691567983056085,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Sprite85",
+					"sid": 321563376157918,
+					"parameters": {
+						"width": "470",
+						"height": "655"
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "Sprite85",
+					"sid": 578137960305885,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"DepthStripe\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 771452460761795,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "Sprite85",
+					"sid": 740592688528210,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"DepthStripe\""
+					}
+				}
+			],
+			"sid": 785701050858900
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 797747349182096,
+					"parameters": {
+						"object": "Sprite86",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 495347868326051,
+					"parameters": {
+						"audio-file": "sapi",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Sprite86",
+					"sid": 221528265979031,
+					"parameters": {
+						"width": "470",
+						"height": "655"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 291116619787764,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Sprite86",
+					"sid": 152269010792043,
+					"parameters": {
+						"width": "500",
+						"height": "685"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 762103148973698,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Sprite86",
+					"sid": 626519916468073,
+					"parameters": {
+						"width": "470",
+						"height": "655"
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "Sprite86",
+					"sid": 766022617129588,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"DepthStripe\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 726836530939111,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "Sprite86",
+					"sid": 923082691646014,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"DepthStripe\""
+					}
+				}
+			],
+			"sid": 875160566520554
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 909600205821013,
+					"parameters": {
+						"object": "Sprite87",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 100809834553972,
+					"parameters": {
+						"audio-file": "kambing",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Sprite87",
+					"sid": 979253129814383,
+					"parameters": {
+						"width": "470",
+						"height": "655"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 152372996887990,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Sprite87",
+					"sid": 346434521592783,
+					"parameters": {
+						"width": "500",
+						"height": "685"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 469621339554908,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Sprite87",
+					"sid": 589326246638379,
+					"parameters": {
+						"width": "470",
+						"height": "655"
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "Sprite87",
+					"sid": 415453326847974,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"DepthStripe\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 998609327350748,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "Sprite87",
+					"sid": 149334879339137,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"DepthStripe\""
+					}
+				}
+			],
+			"sid": 208049696495613
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 981304971323043,
+					"parameters": {
+						"object": "Sprite88",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 109990323598897,
+					"parameters": {
+						"audio-file": "babi",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Sprite88",
+					"sid": 230979545188837,
+					"parameters": {
+						"width": "470",
+						"height": "655"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 954049261627597,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Sprite88",
+					"sid": 553039565229352,
+					"parameters": {
+						"width": "500",
+						"height": "685"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 402705188244764,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Sprite88",
+					"sid": 657937744004958,
+					"parameters": {
+						"width": "470",
+						"height": "655"
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "Sprite88",
+					"sid": 102881834183736,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"DepthStripe\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 353708992074194,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "Sprite88",
+					"sid": 395727809768572,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"DepthStripe\""
+					}
+				}
+			],
+			"sid": 107766921833907
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 382697791401553,
+					"parameters": {
+						"object": "Sprite89",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 654846429659759,
+					"parameters": {
+						"audio-file": "ular",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Sprite89",
+					"sid": 555891687079085,
+					"parameters": {
+						"width": "470",
+						"height": "655"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 653074453716977,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Sprite89",
+					"sid": 944604535862990,
+					"parameters": {
+						"width": "500",
+						"height": "685"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 514854683921056,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Sprite89",
+					"sid": 494190867237110,
+					"parameters": {
+						"width": "470",
+						"height": "655"
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "Sprite89",
+					"sid": 977559526436892,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"DepthStripe\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 739537535668692,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "Sprite89",
+					"sid": 618202898521761,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"DepthStripe\""
+					}
+				}
+			],
+			"sid": 674878559708932
+		}
+	],
+	"sid": 380280150235995
+}

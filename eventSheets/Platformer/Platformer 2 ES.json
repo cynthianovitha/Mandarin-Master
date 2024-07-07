@@ -1,0 +1,6342 @@
+{
+	"name": "Platformer 2 ES",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Pause Platformer ES"
+		},
+		{
+			"eventType": "variable",
+			"name": "heart2",
+			"type": "number",
+			"initialValue": "5",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 984209662365942
+		},
+		{
+			"eventType": "variable",
+			"name": "nilai2",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 951810250386504
+		},
+		{
+			"eventType": "variable",
+			"name": "Paused2",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 170209070338779
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Kontrol Halaman2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 772197067566684,
+							"parameters": {
+								"object": "btn_home",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 135262972309896,
+							"parameters": {
+								"layout": "Menu Layout"
+							}
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 161430892227925
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 252943676744719,
+							"parameters": {
+								"variable": "heart",
+								"value": "5"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 126666295272979,
+							"parameters": {
+								"variable": "nilai",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 228110583332719
+				}
+			],
+			"sid": 670948880318280
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Kontrol Pemain2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 142247066885427,
+							"parameters": {
+								"key": 39
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-mirrored",
+							"objectClass": "girl",
+							"sid": 256219096539180,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 449213725191090
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 812540303426897,
+							"parameters": {
+								"key": 37
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-mirrored",
+							"objectClass": "girl",
+							"sid": 994311047754472,
+							"parameters": {
+								"state": "mirrored"
+							}
+						}
+					],
+					"sid": 510046659179557
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 284813081670130,
+							"parameters": {
+								"object": "btn_left_tranparent2"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 484923116391956,
+							"parameters": {
+								"variable": "Paused",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "girl",
+							"sid": 767419404229398,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "left"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "girl",
+							"sid": 816628100943730,
+							"parameters": {
+								"state": "mirrored"
+							}
+						}
+					],
+					"sid": 269626074951459
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 733142312279247,
+							"parameters": {
+								"object": "btn_right_transparent2"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 132590514321837,
+							"parameters": {
+								"variable": "Paused",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "girl",
+							"sid": 285446465494247,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "right"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "girl",
+							"sid": 411357704001973,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 103301485929433
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 550795416041024,
+							"parameters": {
+								"object": "btn_up_tranparent2"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 389567981121654,
+							"parameters": {
+								"variable": "Paused",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "girl",
+							"sid": 366037841832165,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "jump"
+							}
+						}
+					],
+					"sid": 688189104015736
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 987244935221834
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "btn_left_tranparent2",
+							"sid": 526119291071579,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "btn_left",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "btn_right_transparent2",
+							"sid": 880325511323952,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "btn_right",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "btn_up_tranparent2",
+							"sid": 383538049019639,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "btn_up",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 209828550472388
+				}
+			],
+			"sid": 590703022607277
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Animasi Pemain2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-moving",
+							"objectClass": "girl",
+							"sid": 176146256120456,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "girl",
+							"sid": 617332977224791,
+							"parameters": {
+								"animation": "\"Run\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 452594237958408
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 938266042245564
+						},
+						{
+							"id": "is-jumping",
+							"objectClass": "girl",
+							"sid": 574952408589840,
+							"behaviorType": "Platform",
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "girl",
+							"sid": 787312488813708,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 622020073044499
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-jumping",
+							"objectClass": "girl",
+							"sid": 707498339508418,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "girl",
+							"sid": 520775855796353,
+							"parameters": {
+								"animation": "\"Jump\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 876837626321785
+				}
+			],
+			"sid": 815195836473998
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Nyawa2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 147996866712546
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "nyawa",
+							"sid": 720265025177172,
+							"parameters": {
+								"text": "heart"
+							}
+						}
+					],
+					"sid": 775472139730106
+				}
+			],
+			"sid": 437399282631681
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Musuh2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "girl",
+							"sid": 499352249476178,
+							"parameters": {
+								"object": "fly"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "flash",
+							"objectClass": "girl",
+							"sid": 781630822831112,
+							"behaviorType": "Flash",
+							"parameters": {
+								"on-time": "0.1",
+								"off-time": "0.1",
+								"duration": "1.0"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 504432221279484,
+							"parameters": {
+								"variable": "heart",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 263623896371069
+				}
+			],
+			"sid": 174643666788609
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Nilai2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 215716979621475
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "score",
+							"sid": 155863593673787,
+							"parameters": {
+								"text": "nilai"
+							}
+						}
+					],
+					"sid": 435824548323242
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 693511759735934
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "score_game_over",
+							"sid": 535711854890406,
+							"parameters": {
+								"text": "nilai"
+							}
+						}
+					],
+					"sid": 846667113081593
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 664670507561912
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "score_level_complete",
+							"sid": 196822497271911,
+							"parameters": {
+								"text": "nilai"
+							}
+						}
+					],
+					"sid": 844423218876487
+				}
+			],
+			"sid": 418344781786738
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Level Complete2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 654809321596527
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-animation",
+							"objectClass": "door",
+							"sid": 579654369545705
+						}
+					],
+					"sid": 408605769915222
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "girl",
+							"sid": 608303338378389,
+							"parameters": {
+								"object": "TiledBackground8"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "start-animation",
+							"objectClass": "door",
+							"sid": 473846417878332,
+							"parameters": {
+								"from": "current-frame"
+							}
+						}
+					],
+					"sid": 326754383427821
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "girl",
+							"sid": 665104473684528,
+							"parameters": {
+								"object": "TiledBackground8"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-one-property",
+							"objectClass": "box_level_complete",
+							"sid": 983035208174899,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "offsetY",
+								"end-value": "LayoutHeight/2",
+								"time": "1",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						}
+					],
+					"sid": 602388620694956
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 564700775572145
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "TiledBackground4",
+							"sid": 885355785399401,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "box_level_complete",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "TiledBackground6",
+							"sid": 585012143938177,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "box_level_complete",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "TiledBackground7",
+							"sid": 459484500780263,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "box_level_complete",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "score_level_complete",
+							"sid": 964901870011726,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "box_level_complete",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "star0",
+							"sid": 193315336911656,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "box_level_complete",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "star1",
+							"sid": 201260046285745,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "box_level_complete",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "star2",
+							"sid": 144902173684283,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "box_level_complete",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "star3",
+							"sid": 908921565873560,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "box_level_complete",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 154598759771438
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 748765953471558,
+							"parameters": {
+								"object": "TiledBackground4",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 929777250137529,
+							"parameters": {
+								"layout": "Menu Layout"
+							}
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 992597525318743
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 274556466411743,
+							"parameters": {
+								"variable": "heart",
+								"value": "5"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 915193177854777,
+							"parameters": {
+								"variable": "nilai",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 998047041284436
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 487881931325282,
+							"parameters": {
+								"object": "TiledBackground6",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 898087174703419,
+							"parameters": {
+								"layout": "Platformer 3 Layout"
+							}
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 389126520096756
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 782440169459400,
+							"parameters": {
+								"variable": "heart",
+								"value": "5"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 148723403311279,
+							"parameters": {
+								"variable": "nilai",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 506288239739172
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 640439968029999,
+							"parameters": {
+								"object": "TiledBackground7",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 860602833520020
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 867863178481169,
+							"parameters": {
+								"variable": "heart",
+								"value": "5"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 559085279997997,
+							"parameters": {
+								"variable": "nilai",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 974893980200105
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 259499902129372,
+							"parameters": {
+								"variable": "nilai",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "star0",
+							"sid": 150462120703828,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "star1",
+							"sid": 762244735362390,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "star2",
+							"sid": 779844104336718,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "star3",
+							"sid": 830246641672928,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 932333839669806
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 248049928862722,
+							"parameters": {
+								"variable": "nilai",
+								"comparison": 0,
+								"value": "10"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "star1",
+							"sid": 346954520119016,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "star0",
+							"sid": 434032280389772,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "star2",
+							"sid": 313884363099340,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "star3",
+							"sid": 206773229532142,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 228755856773423
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 263494503626294,
+							"parameters": {
+								"variable": "nilai",
+								"comparison": 0,
+								"value": "20"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "star1",
+							"sid": 880605143253721,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "star0",
+							"sid": 189994876441801,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "star2",
+							"sid": 788280809968831,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "star3",
+							"sid": 735649341531895,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 533933438983981
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 724001944845379,
+							"parameters": {
+								"variable": "nilai",
+								"comparison": 0,
+								"value": "30"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "star1",
+							"sid": 734065847787757,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "star0",
+							"sid": 799486271654642,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "star2",
+							"sid": 792306064612666,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "star3",
+							"sid": 549157336706134,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 113647605647424
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 133713013523413,
+							"parameters": {
+								"variable": "nilai",
+								"comparison": 0,
+								"value": "40"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "star1",
+							"sid": 413532107989694,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "star0",
+							"sid": 652754211967064,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "star2",
+							"sid": 198676668414733,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "star3",
+							"sid": 380545257045753,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 372497079466571
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 705077993515935,
+							"parameters": {
+								"variable": "nilai",
+								"comparison": 0,
+								"value": "50"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "star1",
+							"sid": 946442142744548,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "star0",
+							"sid": 188492888078339,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "star2",
+							"sid": 472963969320247,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "star3",
+							"sid": 683980198186931,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 661003820166087
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 411930004584196,
+							"parameters": {
+								"variable": "nilai",
+								"comparison": 0,
+								"value": "60"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "star2",
+							"sid": 510481043930336,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "star0",
+							"sid": 205332025062161,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "star1",
+							"sid": 442947900608501,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "star3",
+							"sid": 172653830850786,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 871075156238085
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 555419576346722,
+							"parameters": {
+								"variable": "nilai",
+								"comparison": 0,
+								"value": "70"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "star2",
+							"sid": 646291318430408,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "star0",
+							"sid": 889910120482736,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "star1",
+							"sid": 377066131902724,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "star3",
+							"sid": 585803610542567,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 546395796292456
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 743750750820587,
+							"parameters": {
+								"variable": "nilai",
+								"comparison": 0,
+								"value": "80"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "star3",
+							"sid": 182214103480563,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "star0",
+							"sid": 894260383286766,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "star1",
+							"sid": 910409438946754,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "star2",
+							"sid": 560994802087584,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 565626230727790
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 515013504107034,
+							"parameters": {
+								"variable": "nilai",
+								"comparison": 0,
+								"value": "90"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "star3",
+							"sid": 695692791462573,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "star0",
+							"sid": 342691836421931,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "star1",
+							"sid": 894518510425185,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "star2",
+							"sid": 610111096081439,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 456436997997404
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 652682275664784,
+							"parameters": {
+								"variable": "nilai",
+								"comparison": 0,
+								"value": "100"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "star3",
+							"sid": 323911142894722,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "star0",
+							"sid": 785460721518464,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "star1",
+							"sid": 918585093542189,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "star2",
+							"sid": 156166501662079,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 431334832342967
+				}
+			],
+			"sid": 423561155753241
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Game Over2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 825008609989881
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "TiledBackground2",
+							"sid": 643680636780446,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "box_game_over",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "TiledBackground3",
+							"sid": 468674725307913,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "box_game_over",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "score_game_over",
+							"sid": 323635446742962,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "box_game_over",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 862438389907712
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 104953336610331,
+							"parameters": {
+								"variable": "heart",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-one-property",
+							"objectClass": "box_game_over",
+							"sid": 408744710534434,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "offsetY",
+								"end-value": "LayoutHeight/2",
+								"time": "1",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "fly",
+							"sid": 351928652954961
+						}
+					],
+					"sid": 185769768592849
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 117680117141038,
+							"parameters": {
+								"object": "TiledBackground2",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 901605795416775,
+							"parameters": {
+								"layout": "Menu Layout"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 207563456770008,
+							"parameters": {
+								"variable": "heart",
+								"value": "5"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 916902773232174,
+							"parameters": {
+								"variable": "nilai",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 277166126950269
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 358181324570366,
+							"parameters": {
+								"object": "TiledBackground3",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 877803709193690
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 606336871517687
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 470639395067238,
+							"parameters": {
+								"variable": "heart",
+								"value": "5"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 256308774853297,
+							"parameters": {
+								"variable": "nilai",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 540785510570090
+				}
+			],
+			"sid": 798153044771973
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Pertanyaan 11",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Pop Up Muncul11",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "girl",
+									"sid": 457385486978636,
+									"parameters": {
+										"object": "2_blok1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "tween-one-property",
+									"objectClass": "2_pertanyaan1",
+									"sid": 905088354522436,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "LayoutHeight/2",
+										"time": "1",
+										"ease": "easeoutback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 122836116084433
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-start-of-layout",
+									"objectClass": "System",
+									"sid": 701693863079275
+								}
+							],
+							"actions": [
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "2_jawaban1_false",
+									"sid": 920055514082187,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "2_pertanyaan1",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								},
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "2_jawaban1_right",
+									"sid": 770527130377684,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "2_pertanyaan1",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								},
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "2_false1",
+									"sid": 228856764257445,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "2_pertanyaan1",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								},
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "2_right1",
+									"sid": 531895936568229,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "2_pertanyaan1",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								}
+							],
+							"sid": 899335010750552
+						}
+					],
+					"sid": 384717812702465
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Pop Up Pergi11",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 240660966816921,
+									"parameters": {
+										"object": "2_jawaban1_false",
+										"type": "start"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 591139887328373,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "2_pertanyaan1",
+									"sid": 329265451056112,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "-732",
+										"time": "1",
+										"ease": "easeinback",
+										"destroy-on-complete": "yes",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 524747205207343
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 675025714132681,
+									"parameters": {
+										"object": "2_jawaban1_right",
+										"type": "start"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 412388006634830,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "2_pertanyaan1",
+									"sid": 715907528489011,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "-732",
+										"time": "1",
+										"ease": "easeinback",
+										"destroy-on-complete": "yes",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 159658479941777
+						}
+					],
+					"sid": 672693741048244
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Salah Benar11",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-tap-object",
+									"objectClass": "Touch",
+									"sid": 993451940844699,
+									"parameters": {
+										"object": "2_jawaban1_false"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "2_false1",
+									"sid": 584986710150895,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "2_jawaban1_right",
+									"sid": 518576837607883
+								},
+								{
+									"id": "destroy",
+									"objectClass": "2_jawaban1_false",
+									"sid": 479879850624784
+								}
+							],
+							"sid": 985231380930569
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-tap-object",
+									"objectClass": "Touch",
+									"sid": 537480169288581,
+									"parameters": {
+										"object": "2_jawaban1_right"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "2_right1",
+									"sid": 393971443425757,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 894337874172919,
+									"parameters": {
+										"variable": "nilai",
+										"value": "10"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "2_jawaban1_false",
+									"sid": 820672135167142
+								},
+								{
+									"id": "destroy",
+									"objectClass": "2_jawaban1_right",
+									"sid": 215441713801419
+								}
+							],
+							"sid": 722268074389714
+						}
+					],
+					"sid": 179203029859102
+				}
+			],
+			"sid": 730646786331318
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Pertanyaan 12",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Pop Up Muncul12",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "girl",
+									"sid": 611529401850668,
+									"parameters": {
+										"object": "2_blok2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "tween-one-property",
+									"objectClass": "2_pertanyaan2",
+									"sid": 277179350841219,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "LayoutHeight/2",
+										"time": "1",
+										"ease": "easeoutback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 618190876646990
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-start-of-layout",
+									"objectClass": "System",
+									"sid": 787526135244296
+								}
+							],
+							"actions": [
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "2_jawaban2_right",
+									"sid": 825179017255260,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "2_pertanyaan2",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								},
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "2_jawaban2_false",
+									"sid": 157974914421258,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "2_pertanyaan2",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								},
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "2_false2",
+									"sid": 172454684632850,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "2_pertanyaan2",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								},
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "2_right2",
+									"sid": 637387818591402,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "2_pertanyaan2",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								}
+							],
+							"sid": 797217329353748
+						}
+					],
+					"sid": 535716392969746
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Pop Up Pergi12",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 559876207276560,
+									"parameters": {
+										"object": "2_jawaban2_right",
+										"type": "start"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 481059301574591,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "2_pertanyaan2",
+									"sid": 235721334140577,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "-732",
+										"time": "1",
+										"ease": "easeinback",
+										"destroy-on-complete": "yes",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 663959750503527
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 275720695791629,
+									"parameters": {
+										"object": "2_jawaban2_false",
+										"type": "start"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 958942448289601,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "2_pertanyaan2",
+									"sid": 311826834568920,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "-732",
+										"time": "1",
+										"ease": "easeinback",
+										"destroy-on-complete": "yes",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 467341406127287
+						}
+					],
+					"sid": 412915626780275
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Salah Benar12",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-tap-object",
+									"objectClass": "Touch",
+									"sid": 241814361699705,
+									"parameters": {
+										"object": "2_jawaban2_false"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "2_false2",
+									"sid": 255524763534648,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "2_jawaban2_false",
+									"sid": 402166630711029
+								},
+								{
+									"id": "destroy",
+									"objectClass": "2_jawaban2_right",
+									"sid": 983577953843139
+								}
+							],
+							"sid": 483314655702902
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-tap-object",
+									"objectClass": "Touch",
+									"sid": 240342635102731,
+									"parameters": {
+										"object": "2_jawaban2_right"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "2_right2",
+									"sid": 340006798288282,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 675777275500700,
+									"parameters": {
+										"variable": "nilai",
+										"value": "10"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "2_jawaban2_false",
+									"sid": 787826254003153
+								},
+								{
+									"id": "destroy",
+									"objectClass": "2_jawaban2_right",
+									"sid": 462705848833775
+								}
+							],
+							"sid": 968583451916393
+						}
+					],
+					"sid": 630283926945699
+				}
+			],
+			"sid": 614750947130721
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Pertanyaan 13",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Pop Up Muncul13",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "girl",
+									"sid": 574651773490696,
+									"parameters": {
+										"object": "2_blok3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "tween-one-property",
+									"objectClass": "2_pertanyaan3",
+									"sid": 708791268533890,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "LayoutHeight/2",
+										"time": "1",
+										"ease": "easeoutback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 259558456245131
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-start-of-layout",
+									"objectClass": "System",
+									"sid": 465594894592475
+								}
+							],
+							"actions": [
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "2_jawaban3_false",
+									"sid": 947083654465402,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "2_pertanyaan3",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								},
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "2_jawaban3_right",
+									"sid": 994764319585888,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "2_pertanyaan3",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								},
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "2_false3",
+									"sid": 264499940176500,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "2_pertanyaan3",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								},
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "2_right3",
+									"sid": 369454689371982,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "2_pertanyaan3",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								}
+							],
+							"sid": 612938978997543
+						}
+					],
+					"sid": 393686727601966
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Pop Up Pergi13",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 814047719715593,
+									"parameters": {
+										"object": "2_jawaban3_false",
+										"type": "start"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 132100858728585,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "2_pertanyaan3",
+									"sid": 602996976597474,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "-732",
+										"time": "1",
+										"ease": "easeinback",
+										"destroy-on-complete": "yes",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 930473631073156
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 244758367946658,
+									"parameters": {
+										"object": "2_jawaban3_right",
+										"type": "start"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 647259378813038,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "2_pertanyaan3",
+									"sid": 801570777786881,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "-732",
+										"time": "1",
+										"ease": "easeinback",
+										"destroy-on-complete": "yes",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 738671788444895
+						}
+					],
+					"sid": 594424473374185
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Salah Benar13",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-tap-object",
+									"objectClass": "Touch",
+									"sid": 882459094086677,
+									"parameters": {
+										"object": "2_jawaban3_false"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "2_false3",
+									"sid": 263877620293358,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "2_jawaban3_right",
+									"sid": 173043558537196
+								},
+								{
+									"id": "destroy",
+									"objectClass": "2_jawaban3_false",
+									"sid": 915561996183595
+								}
+							],
+							"sid": 921033527320901
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-tap-object",
+									"objectClass": "Touch",
+									"sid": 827059196183318,
+									"parameters": {
+										"object": "2_jawaban3_right"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "2_right3",
+									"sid": 502421894825447,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 815854814469120,
+									"parameters": {
+										"variable": "nilai",
+										"value": "10"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "2_jawaban3_right",
+									"sid": 488177342784623
+								},
+								{
+									"id": "destroy",
+									"objectClass": "2_jawaban3_false",
+									"sid": 156240662488845
+								}
+							],
+							"sid": 209988537585948
+						}
+					],
+					"sid": 470656823930464
+				}
+			],
+			"sid": 687944400296833
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Pertanyaan 14",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Pop Up Muncul14",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "girl",
+									"sid": 835804042217467,
+									"parameters": {
+										"object": "2_blok4"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "tween-one-property",
+									"objectClass": "2_pertanyaan4",
+									"sid": 657314784304924,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "LayoutHeight/2",
+										"time": "1",
+										"ease": "easeoutback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 328848118926657
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-start-of-layout",
+									"objectClass": "System",
+									"sid": 466691616664802
+								}
+							],
+							"actions": [
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "2_jawaban4_false",
+									"sid": 837738950677599,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "2_pertanyaan4",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								},
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "2_jawaban4_right",
+									"sid": 171077092207546,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "2_pertanyaan4",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								},
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "2_false4",
+									"sid": 217362064079830,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "2_pertanyaan4",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								},
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "2_right4",
+									"sid": 855599154238574,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "2_pertanyaan4",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								}
+							],
+							"sid": 217441512594478
+						}
+					],
+					"sid": 592131697321012
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Pop Up Pergi14",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 103982613685706,
+									"parameters": {
+										"object": "2_jawaban4_false",
+										"type": "start"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 389928665856365,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "2_pertanyaan4",
+									"sid": 731714436627892,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "-732",
+										"time": "1",
+										"ease": "easeinback",
+										"destroy-on-complete": "yes",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 545723633490216
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 650555491509550,
+									"parameters": {
+										"object": "2_jawaban4_right",
+										"type": "start"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 932714848502591,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "2_pertanyaan4",
+									"sid": 962610103782271,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "-732",
+										"time": "1",
+										"ease": "easeinback",
+										"destroy-on-complete": "yes",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 267454978874891
+						}
+					],
+					"sid": 229311805463635
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Salah Benar14",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-tap-object",
+									"objectClass": "Touch",
+									"sid": 283415334123621,
+									"parameters": {
+										"object": "2_jawaban4_false"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "2_false4",
+									"sid": 715132381763994,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "2_jawaban4_right",
+									"sid": 161439075837631
+								},
+								{
+									"id": "destroy",
+									"objectClass": "2_jawaban4_false",
+									"sid": 853163929478988
+								}
+							],
+							"sid": 996571891645921
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-tap-object",
+									"objectClass": "Touch",
+									"sid": 918685698403973,
+									"parameters": {
+										"object": "2_jawaban4_right"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "2_right4",
+									"sid": 441143989313017,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 263078174620611,
+									"parameters": {
+										"variable": "nilai",
+										"value": "10"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "2_jawaban4_right",
+									"sid": 883584968786011
+								},
+								{
+									"id": "destroy",
+									"objectClass": "2_jawaban4_false",
+									"sid": 862839896377877
+								}
+							],
+							"sid": 516672759347846
+						}
+					],
+					"sid": 918712390281016
+				}
+			],
+			"sid": 640339041586639
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Pertanyaan 15",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Pop Up Muncul15",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "girl",
+									"sid": 954837016566884,
+									"parameters": {
+										"object": "2_blok5"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "tween-one-property",
+									"objectClass": "2_pertanyaan5",
+									"sid": 915301341801806,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "LayoutHeight/2",
+										"time": "1",
+										"ease": "easeoutback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 943325830346245
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-start-of-layout",
+									"objectClass": "System",
+									"sid": 979766557396058
+								}
+							],
+							"actions": [
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "2_jawaban5_false",
+									"sid": 241031443958567,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "2_pertanyaan5",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								},
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "2_jawaban5_right",
+									"sid": 295150633058432,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "2_pertanyaan5",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								},
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "2_false5",
+									"sid": 245231523701824,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "2_pertanyaan5",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								},
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "2_right5",
+									"sid": 380847542158098,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "2_pertanyaan5",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								}
+							],
+							"sid": 515597683822973
+						}
+					],
+					"sid": 706928796609848
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Pop Up Pergi15",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 521119299313477,
+									"parameters": {
+										"object": "2_jawaban5_false",
+										"type": "start"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 297225034273431,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "2_pertanyaan5",
+									"sid": 330006235384689,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "-732",
+										"time": "1",
+										"ease": "easeinback",
+										"destroy-on-complete": "yes",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 140516723635648
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 498395490972353,
+									"parameters": {
+										"object": "2_jawaban5_right",
+										"type": "start"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 513114814869002,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "2_pertanyaan5",
+									"sid": 637155094265361,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "-732",
+										"time": "1",
+										"ease": "easeinback",
+										"destroy-on-complete": "yes",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 732084336387928
+						}
+					],
+					"sid": 880948287051188
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Salah Benar15",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-tap-object",
+									"objectClass": "Touch",
+									"sid": 878667732330314,
+									"parameters": {
+										"object": "2_jawaban5_false"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "2_false5",
+									"sid": 652922092188855,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "2_jawaban5_right",
+									"sid": 392180153840495
+								},
+								{
+									"id": "destroy",
+									"objectClass": "2_jawaban5_false",
+									"sid": 868784437921132
+								}
+							],
+							"sid": 110938187005788
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-tap-object",
+									"objectClass": "Touch",
+									"sid": 240469704450541,
+									"parameters": {
+										"object": "2_jawaban5_right"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "2_right5",
+									"sid": 118697347623942,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 352095370795584,
+									"parameters": {
+										"variable": "nilai",
+										"value": "10"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "2_jawaban5_right",
+									"sid": 797493474293841
+								},
+								{
+									"id": "destroy",
+									"objectClass": "2_jawaban5_false",
+									"sid": 173993550073878
+								}
+							],
+							"sid": 634526179163270
+						}
+					],
+					"sid": 192777488266031
+				}
+			],
+			"sid": 768043397468018
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Pertanyaan 16",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Pop Up Muncul16",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "girl",
+									"sid": 558628597573421,
+									"parameters": {
+										"object": "2_blok6"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "tween-one-property",
+									"objectClass": "2_pertanyaan6",
+									"sid": 750247556284301,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "LayoutHeight/2",
+										"time": "1",
+										"ease": "easeoutback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 639172293874004
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-start-of-layout",
+									"objectClass": "System",
+									"sid": 527565630308688
+								}
+							],
+							"actions": [
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "2_jawaban6_false",
+									"sid": 264184470774330,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "2_pertanyaan6",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								},
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "2_jawaban6_right",
+									"sid": 768845466012488,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "2_pertanyaan6",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								},
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "2_false6",
+									"sid": 678825377548040,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "2_pertanyaan6",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								},
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "2_right6",
+									"sid": 691818090862437,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "2_pertanyaan6",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								}
+							],
+							"sid": 198459996633741
+						}
+					],
+					"sid": 173961972723006
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Pop Up Pergi16",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 533182583285875,
+									"parameters": {
+										"object": "2_jawaban6_false",
+										"type": "start"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 839980929784064,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "2_pertanyaan6",
+									"sid": 998804916043809,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "-732",
+										"time": "1",
+										"ease": "easeinback",
+										"destroy-on-complete": "yes",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 823001396277566
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 541245469523882,
+									"parameters": {
+										"object": "2_jawaban6_right",
+										"type": "start"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 990370356712546,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "2_pertanyaan6",
+									"sid": 128412502273644,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "-732",
+										"time": "1",
+										"ease": "easeinback",
+										"destroy-on-complete": "yes",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 345351092994003
+						}
+					],
+					"sid": 865776503739298
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Salah Benar16",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-tap-object",
+									"objectClass": "Touch",
+									"sid": 694098595533707,
+									"parameters": {
+										"object": "2_jawaban6_false"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "2_false6",
+									"sid": 392925814944669,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "2_jawaban6_right",
+									"sid": 119044094465783
+								},
+								{
+									"id": "destroy",
+									"objectClass": "2_jawaban6_false",
+									"sid": 563440330759447
+								}
+							],
+							"sid": 142084420402617
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-tap-object",
+									"objectClass": "Touch",
+									"sid": 812746758737873,
+									"parameters": {
+										"object": "2_jawaban6_right"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "2_right6",
+									"sid": 771008508098837,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 879698130168393,
+									"parameters": {
+										"variable": "nilai",
+										"value": "10"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "2_jawaban6_right",
+									"sid": 887306051107776
+								},
+								{
+									"id": "destroy",
+									"objectClass": "2_jawaban6_false",
+									"sid": 604778239229501
+								}
+							],
+							"sid": 574365710531034
+						}
+					],
+					"sid": 457979135422080
+				}
+			],
+			"sid": 223907264873459
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Pertanyaan 17",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Pop Up Muncul17",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "girl",
+									"sid": 654700443087339,
+									"parameters": {
+										"object": "2_blok7"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "tween-one-property",
+									"objectClass": "2_pertanyaan7",
+									"sid": 565340744501603,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "LayoutHeight/2",
+										"time": "1",
+										"ease": "easeoutback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 405098694245123
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-start-of-layout",
+									"objectClass": "System",
+									"sid": 224782742444949
+								}
+							],
+							"actions": [
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "2_jawaban7_false",
+									"sid": 279304881766512,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "2_pertanyaan7",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								},
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "2_jawaban7_right",
+									"sid": 822494897892018,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "2_pertanyaan7",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								},
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "2_false7",
+									"sid": 661952513967997,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "2_pertanyaan7",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								},
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "2_right7",
+									"sid": 324543557064252,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "2_pertanyaan7",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								}
+							],
+							"sid": 549396315638134
+						}
+					],
+					"sid": 180264702780527
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Pop Up Pergi17",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 535751330964918,
+									"parameters": {
+										"object": "2_jawaban7_right",
+										"type": "start"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 511753172747699,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "2_pertanyaan7",
+									"sid": 231784509399797,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "-732",
+										"time": "1",
+										"ease": "easeinback",
+										"destroy-on-complete": "yes",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 820344431779140
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 872457902279827,
+									"parameters": {
+										"object": "2_jawaban7_false",
+										"type": "start"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 746947508949842,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "2_pertanyaan7",
+									"sid": 607403265898787,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "-732",
+										"time": "1",
+										"ease": "easeinback",
+										"destroy-on-complete": "yes",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 570120545833378
+						}
+					],
+					"sid": 485938905618791
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Salah Benar17",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-tap-object",
+									"objectClass": "Touch",
+									"sid": 546499681044195,
+									"parameters": {
+										"object": "2_jawaban7_false"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "2_false7",
+									"sid": 280211856979218,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "2_jawaban7_right",
+									"sid": 342947201127505
+								},
+								{
+									"id": "destroy",
+									"objectClass": "2_jawaban7_false",
+									"sid": 984115963567723
+								}
+							],
+							"sid": 337596861623987
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-tap-object",
+									"objectClass": "Touch",
+									"sid": 725205956371883,
+									"parameters": {
+										"object": "2_jawaban7_right"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "2_right7",
+									"sid": 419171896800621,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 456911242357192,
+									"parameters": {
+										"variable": "nilai",
+										"value": "10"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "2_jawaban7_right",
+									"sid": 378210479611934
+								},
+								{
+									"id": "destroy",
+									"objectClass": "2_jawaban7_false",
+									"sid": 330584558552263
+								}
+							],
+							"sid": 428894554620565
+						}
+					],
+					"sid": 691217638397294
+				}
+			],
+			"sid": 463096810833200
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Pertanyaan 18",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Pop Up Muncul18",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "girl",
+									"sid": 821306860451581,
+									"parameters": {
+										"object": "2_blok8"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "tween-one-property",
+									"objectClass": "2_pertanyaan8",
+									"sid": 807416406806775,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "LayoutHeight/2",
+										"time": "1",
+										"ease": "easeoutback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 971279998340441
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-start-of-layout",
+									"objectClass": "System",
+									"sid": 551303682854375
+								}
+							],
+							"actions": [
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "2_jawaban8_false",
+									"sid": 475186519375603,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "2_pertanyaan8",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								},
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "2_jawaban8_right",
+									"sid": 961837952565372,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "2_pertanyaan8",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								},
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "2_right8",
+									"sid": 150397374579746,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "2_pertanyaan8",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								},
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "2_false8",
+									"sid": 879568745590686,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "2_pertanyaan8",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								}
+							],
+							"sid": 274961408341020
+						}
+					],
+					"sid": 112039465754785
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Pop Up Pergi18",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 171977596541926,
+									"parameters": {
+										"object": "2_jawaban8_false",
+										"type": "start"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 930634965119781,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "2_pertanyaan8",
+									"sid": 105052740005905,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "-732",
+										"time": "1",
+										"ease": "easeinback",
+										"destroy-on-complete": "yes",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 181503766510946
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 803309799623605,
+									"parameters": {
+										"object": "2_jawaban8_right",
+										"type": "start"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 313160286790120,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "2_pertanyaan8",
+									"sid": 261025866568795,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "-732",
+										"time": "1",
+										"ease": "easeinback",
+										"destroy-on-complete": "yes",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 327380295514530
+						}
+					],
+					"sid": 632469986742032
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Salah Benar18",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-tap-object",
+									"objectClass": "Touch",
+									"sid": 491127553921155,
+									"parameters": {
+										"object": "2_jawaban8_false"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "2_false8",
+									"sid": 162333151765295,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "2_jawaban8_right",
+									"sid": 886053056795805
+								},
+								{
+									"id": "destroy",
+									"objectClass": "2_jawaban8_false",
+									"sid": 468288355479251
+								}
+							],
+							"sid": 238224249607797
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-tap-object",
+									"objectClass": "Touch",
+									"sid": 669986649478779,
+									"parameters": {
+										"object": "2_jawaban8_right"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "2_right8",
+									"sid": 789962745730241,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 685553380229153,
+									"parameters": {
+										"variable": "nilai",
+										"value": "10"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "2_jawaban8_right",
+									"sid": 342552940822235
+								},
+								{
+									"id": "destroy",
+									"objectClass": "2_jawaban8_false",
+									"sid": 849583671136489
+								}
+							],
+							"sid": 281315165850836
+						}
+					],
+					"sid": 223700329905773
+				}
+			],
+			"sid": 992349807148031
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Pertanyaan 19",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Pop Up Muncul19",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "girl",
+									"sid": 544268152423513,
+									"parameters": {
+										"object": "2_blok9"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "tween-one-property",
+									"objectClass": "2_pertanyaan9",
+									"sid": 344917580658943,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "LayoutHeight/2",
+										"time": "1",
+										"ease": "easeoutback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 875414910903713
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-start-of-layout",
+									"objectClass": "System",
+									"sid": 663142777215503
+								}
+							],
+							"actions": [
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "2_jawaban9_false",
+									"sid": 473763822624606,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "2_pertanyaan9",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								},
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "2_jawaban9_right",
+									"sid": 592895479873193,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "2_pertanyaan9",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								},
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "2_false9",
+									"sid": 878259616311400,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "2_pertanyaan9",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								},
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "2_right9",
+									"sid": 759244011769743,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "2_pertanyaan9",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								}
+							],
+							"sid": 773838711762166
+						}
+					],
+					"sid": 816186943548323
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Pop Up Pergi19",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 784870880613001,
+									"parameters": {
+										"object": "2_jawaban9_false",
+										"type": "start"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 270945736396616,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "2_pertanyaan9",
+									"sid": 537701338311174,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "-732",
+										"time": "1",
+										"ease": "easeinback",
+										"destroy-on-complete": "yes",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 539322891543711
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 870787097133965,
+									"parameters": {
+										"object": "2_jawaban9_right",
+										"type": "start"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 943575496940042,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "2_pertanyaan9",
+									"sid": 809234959412055,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "-732",
+										"time": "1",
+										"ease": "easeinback",
+										"destroy-on-complete": "yes",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 148726506417718
+						}
+					],
+					"sid": 117517635608722
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Salah Benar19",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-tap-object",
+									"objectClass": "Touch",
+									"sid": 697351203985850,
+									"parameters": {
+										"object": "2_jawaban9_false"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "2_false9",
+									"sid": 854661283501638,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "2_jawaban9_right",
+									"sid": 342785426438768
+								},
+								{
+									"id": "destroy",
+									"objectClass": "2_jawaban9_false",
+									"sid": 543638786699274
+								}
+							],
+							"sid": 552273680154014
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-tap-object",
+									"objectClass": "Touch",
+									"sid": 828315835911461,
+									"parameters": {
+										"object": "2_jawaban9_right"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "2_right9",
+									"sid": 295444316620587,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 712366180869743,
+									"parameters": {
+										"variable": "nilai",
+										"value": "10"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "2_jawaban9_right",
+									"sid": 723794954035551
+								},
+								{
+									"id": "destroy",
+									"objectClass": "2_jawaban9_false",
+									"sid": 548342107889889
+								}
+							],
+							"sid": 205026828271188
+						}
+					],
+					"sid": 350272007991697
+				}
+			],
+			"sid": 602446481878359
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Pertanyaan 20",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Pop Up Muncul20",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "girl",
+									"sid": 610465394740401,
+									"parameters": {
+										"object": "2_blok10"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "tween-one-property",
+									"objectClass": "2_pertanyaan10",
+									"sid": 436625813530589,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "LayoutHeight/2",
+										"time": "1",
+										"ease": "easeoutback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 538545466374197
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-start-of-layout",
+									"objectClass": "System",
+									"sid": 653982140633679
+								}
+							],
+							"actions": [
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "2_jawaban10_false",
+									"sid": 829611609157590,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "2_pertanyaan10",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								},
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "2_jawaban10_right",
+									"sid": 723212727485267,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "2_pertanyaan10",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								},
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "2_false10",
+									"sid": 922987492497546,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "2_pertanyaan10",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								},
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "2_right10",
+									"sid": 121288982567147,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "2_pertanyaan10",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								}
+							],
+							"sid": 840215166562429
+						}
+					],
+					"sid": 994058963706465
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Pop Up Pergi20",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 780348387937714,
+									"parameters": {
+										"object": "2_jawaban10_false",
+										"type": "start"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 424264431067653,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "2_pertanyaan10",
+									"sid": 367327112251221,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "-732",
+										"time": "1",
+										"ease": "easeinback",
+										"destroy-on-complete": "yes",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 438958859531385
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 718153675701906,
+									"parameters": {
+										"object": "2_jawaban10_right",
+										"type": "start"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 802302245844088,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "2_pertanyaan10",
+									"sid": 415011732005883,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "-732",
+										"time": "1",
+										"ease": "easeinback",
+										"destroy-on-complete": "yes",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 435012364367198
+						}
+					],
+					"sid": 141608071110160
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Salah Benar20",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-tap-object",
+									"objectClass": "Touch",
+									"sid": 537776724739795,
+									"parameters": {
+										"object": "2_jawaban10_false"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "2_false10",
+									"sid": 423492489118194,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "2_jawaban10_false",
+									"sid": 858125067565186
+								},
+								{
+									"id": "destroy",
+									"objectClass": "2_jawaban10_right",
+									"sid": 654281641228109
+								}
+							],
+							"sid": 332485074087089
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-tap-object",
+									"objectClass": "Touch",
+									"sid": 757742800191787,
+									"parameters": {
+										"object": "2_jawaban10_right"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "2_right10",
+									"sid": 587501890327169,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 906757697071431,
+									"parameters": {
+										"variable": "nilai",
+										"value": "10"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "2_jawaban10_false",
+									"sid": 699291404909606
+								},
+								{
+									"id": "destroy",
+									"objectClass": "2_jawaban10_right",
+									"sid": 169814392568932
+								}
+							],
+							"sid": 314628442687483
+						}
+					],
+					"sid": 428710861314943
+				}
+			],
+			"sid": 948375447568731
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Infisible Button2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "girl",
+							"sid": 189333458200831,
+							"parameters": {
+								"object": "2_blok1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-height",
+							"objectClass": "btn_left_tranparent2",
+							"sid": 202133732072655,
+							"parameters": {
+								"height": "0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_right_transparent2",
+							"sid": 660572329260031,
+							"parameters": {
+								"height": "0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_up_tranparent2",
+							"sid": 953420376157896,
+							"parameters": {
+								"height": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 330556911111417,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "2_blok1",
+							"sid": 388783719971057
+						}
+					],
+					"sid": 542936928599141
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 528982751841643,
+							"parameters": {
+								"object": "2_jawaban1_false",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 938411486497550,
+							"parameters": {
+								"seconds": "2.0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_left_tranparent2",
+							"sid": 176959163307938,
+							"parameters": {
+								"height": "325"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_right_transparent2",
+							"sid": 974413567603951,
+							"parameters": {
+								"height": "325"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_up_tranparent2",
+							"sid": 532902367582329,
+							"parameters": {
+								"height": "325"
+							}
+						}
+					],
+					"sid": 839412586634701
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 699859680484865,
+							"parameters": {
+								"object": "2_jawaban1_right",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 796835981154925,
+							"parameters": {
+								"seconds": "2.0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_left_tranparent2",
+							"sid": 779578634035278,
+							"parameters": {
+								"height": "325"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_right_transparent2",
+							"sid": 463839972066320,
+							"parameters": {
+								"height": "325"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_up_tranparent2",
+							"sid": 359062216616338,
+							"parameters": {
+								"height": "325"
+							}
+						}
+					],
+					"sid": 314103254538886
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "girl",
+							"sid": 159468157544156,
+							"parameters": {
+								"object": "2_blok2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-height",
+							"objectClass": "btn_left_tranparent2",
+							"sid": 241769846096768,
+							"parameters": {
+								"height": "0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_right_transparent2",
+							"sid": 492540126673351,
+							"parameters": {
+								"height": "0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_up_tranparent2",
+							"sid": 753522438199184,
+							"parameters": {
+								"height": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 332892804198383,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "2_blok2",
+							"sid": 190057768859469
+						}
+					],
+					"sid": 864294738126788
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 782291281956662,
+							"parameters": {
+								"object": "2_jawaban2_false",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 312517340882573,
+							"parameters": {
+								"seconds": "2.0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_left_tranparent2",
+							"sid": 198533709492398,
+							"parameters": {
+								"height": "325"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_right_transparent2",
+							"sid": 506870169643477,
+							"parameters": {
+								"height": "325"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_up_tranparent2",
+							"sid": 106991221015300,
+							"parameters": {
+								"height": "325"
+							}
+						}
+					],
+					"sid": 354911189152105
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 334861007475475,
+							"parameters": {
+								"object": "2_jawaban2_right",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 849763501434598,
+							"parameters": {
+								"seconds": "2.0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_left_tranparent2",
+							"sid": 532142613747793,
+							"parameters": {
+								"height": "325"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_right_transparent2",
+							"sid": 292457983330740,
+							"parameters": {
+								"height": "325"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_up_tranparent2",
+							"sid": 324026667540016,
+							"parameters": {
+								"height": "325"
+							}
+						}
+					],
+					"sid": 255279073755753
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "girl",
+							"sid": 488821045191937,
+							"parameters": {
+								"object": "2_blok3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-height",
+							"objectClass": "btn_left_tranparent2",
+							"sid": 950388099564022,
+							"parameters": {
+								"height": "0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_right_transparent2",
+							"sid": 267179144917010,
+							"parameters": {
+								"height": "0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_up_tranparent2",
+							"sid": 457902851796264,
+							"parameters": {
+								"height": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 607063171287235,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "2_blok3",
+							"sid": 462392561770680
+						}
+					],
+					"sid": 584047202550413
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 841870195124506,
+							"parameters": {
+								"object": "2_jawaban3_false",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 739186940426746,
+							"parameters": {
+								"seconds": "2.0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_left_tranparent2",
+							"sid": 442668438524175,
+							"parameters": {
+								"height": "325"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_right_transparent2",
+							"sid": 436865277470343,
+							"parameters": {
+								"height": "325"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_up_tranparent2",
+							"sid": 954603992039744,
+							"parameters": {
+								"height": "325"
+							}
+						}
+					],
+					"sid": 381378718890041
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 890952476907620,
+							"parameters": {
+								"object": "2_jawaban3_right",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 532156584344257,
+							"parameters": {
+								"seconds": "2.0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_left_tranparent2",
+							"sid": 335618976567234,
+							"parameters": {
+								"height": "325"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_right_transparent2",
+							"sid": 445221831980065,
+							"parameters": {
+								"height": "325"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_up_tranparent2",
+							"sid": 414909494474580,
+							"parameters": {
+								"height": "325"
+							}
+						}
+					],
+					"sid": 214323824165318
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "girl",
+							"sid": 844834337029403,
+							"parameters": {
+								"object": "2_blok4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-height",
+							"objectClass": "btn_left_tranparent2",
+							"sid": 511527500149083,
+							"parameters": {
+								"height": "0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_right_transparent2",
+							"sid": 396880847944025,
+							"parameters": {
+								"height": "0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_up_tranparent2",
+							"sid": 131071171441793,
+							"parameters": {
+								"height": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 863819836840353,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "2_blok4",
+							"sid": 922411575611097
+						}
+					],
+					"sid": 850952897415646
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 512170703213654,
+							"parameters": {
+								"object": "2_jawaban4_false",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 660547877492584,
+							"parameters": {
+								"seconds": "2.0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_left_tranparent2",
+							"sid": 974491965800428,
+							"parameters": {
+								"height": "325"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_right_transparent2",
+							"sid": 118615947100141,
+							"parameters": {
+								"height": "325"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_up_tranparent2",
+							"sid": 412484213595403,
+							"parameters": {
+								"height": "325"
+							}
+						}
+					],
+					"sid": 450875710195861
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 758240729300349,
+							"parameters": {
+								"object": "2_jawaban4_right",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 100837845726653,
+							"parameters": {
+								"seconds": "2.0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_left_tranparent2",
+							"sid": 955911492695999,
+							"parameters": {
+								"height": "325"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_right_transparent2",
+							"sid": 508732905083522,
+							"parameters": {
+								"height": "325"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_up_tranparent2",
+							"sid": 914202179590406,
+							"parameters": {
+								"height": "325"
+							}
+						}
+					],
+					"sid": 308014666639160
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "girl",
+							"sid": 667702223417049,
+							"parameters": {
+								"object": "2_blok5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-height",
+							"objectClass": "btn_left_tranparent2",
+							"sid": 630264070914315,
+							"parameters": {
+								"height": "0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_right_transparent2",
+							"sid": 908032507999630,
+							"parameters": {
+								"height": "0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_up_tranparent2",
+							"sid": 764421936980249,
+							"parameters": {
+								"height": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 122157882554635,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "2_blok5",
+							"sid": 343804482415695
+						}
+					],
+					"sid": 966650434154324
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 671229721323151,
+							"parameters": {
+								"object": "2_jawaban5_false",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 607437556563812,
+							"parameters": {
+								"seconds": "2.0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_left_tranparent2",
+							"sid": 651046316200767,
+							"parameters": {
+								"height": "325"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_right_transparent2",
+							"sid": 226883177801336,
+							"parameters": {
+								"height": "325"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_up_tranparent2",
+							"sid": 478799756205710,
+							"parameters": {
+								"height": "325"
+							}
+						}
+					],
+					"sid": 551305197848066
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 815094460617393,
+							"parameters": {
+								"object": "2_jawaban5_right",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 396617802850908,
+							"parameters": {
+								"seconds": "2.0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_left_tranparent2",
+							"sid": 505329644978404,
+							"parameters": {
+								"height": "325"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_right_transparent2",
+							"sid": 703226728572698,
+							"parameters": {
+								"height": "325"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_up_tranparent2",
+							"sid": 984977724451813,
+							"parameters": {
+								"height": "325"
+							}
+						}
+					],
+					"sid": 278647321707201
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "girl",
+							"sid": 892746093077939,
+							"parameters": {
+								"object": "2_blok6"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-height",
+							"objectClass": "btn_left_tranparent2",
+							"sid": 333239484973905,
+							"parameters": {
+								"height": "0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_right_transparent2",
+							"sid": 767701499276745,
+							"parameters": {
+								"height": "0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_up_tranparent2",
+							"sid": 990583573855050,
+							"parameters": {
+								"height": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 252463690104230,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "2_blok6",
+							"sid": 923992039577269
+						}
+					],
+					"sid": 557820780377802
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 233006597434151,
+							"parameters": {
+								"object": "2_jawaban6_false",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 565120951867589,
+							"parameters": {
+								"seconds": "2.0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_left_tranparent2",
+							"sid": 425671772449129,
+							"parameters": {
+								"height": "325"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_right_transparent2",
+							"sid": 174224466279423,
+							"parameters": {
+								"height": "325"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_up_tranparent2",
+							"sid": 262587782805926,
+							"parameters": {
+								"height": "325"
+							}
+						}
+					],
+					"sid": 273945038680470
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 568839719143636,
+							"parameters": {
+								"object": "2_jawaban6_right",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 327075179475851,
+							"parameters": {
+								"seconds": "2.0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_left_tranparent2",
+							"sid": 417871707478041,
+							"parameters": {
+								"height": "325"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_right_transparent2",
+							"sid": 538857593608860,
+							"parameters": {
+								"height": "325"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_up_tranparent2",
+							"sid": 188611053947284,
+							"parameters": {
+								"height": "325"
+							}
+						}
+					],
+					"sid": 199379764051254
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "girl",
+							"sid": 486399782058153,
+							"parameters": {
+								"object": "2_blok7"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-height",
+							"objectClass": "btn_left_tranparent2",
+							"sid": 571654857753065,
+							"parameters": {
+								"height": "0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_right_transparent2",
+							"sid": 228401055186418,
+							"parameters": {
+								"height": "0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_up_tranparent2",
+							"sid": 240295507127510,
+							"parameters": {
+								"height": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 730078265971116,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "2_blok7",
+							"sid": 191644428503259
+						}
+					],
+					"sid": 818184722543916
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 885828275957443,
+							"parameters": {
+								"object": "2_jawaban7_false",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 341324078666938,
+							"parameters": {
+								"seconds": "2.0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_left_tranparent2",
+							"sid": 974589736080996,
+							"parameters": {
+								"height": "325"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_right_transparent2",
+							"sid": 621593295055031,
+							"parameters": {
+								"height": "325"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_up_tranparent2",
+							"sid": 683299563959377,
+							"parameters": {
+								"height": "325"
+							}
+						}
+					],
+					"sid": 743196124636344
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 650158012561826,
+							"parameters": {
+								"object": "2_jawaban7_right",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 500130518333087,
+							"parameters": {
+								"seconds": "2.0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_left_tranparent2",
+							"sid": 426451718209485,
+							"parameters": {
+								"height": "325"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_right_transparent2",
+							"sid": 914216692255428,
+							"parameters": {
+								"height": "325"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_up_tranparent2",
+							"sid": 633137531083169,
+							"parameters": {
+								"height": "325"
+							}
+						}
+					],
+					"sid": 395763362572086
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "girl",
+							"sid": 119596236875542,
+							"parameters": {
+								"object": "2_blok8"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-height",
+							"objectClass": "btn_left_tranparent2",
+							"sid": 488613828359954,
+							"parameters": {
+								"height": "0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_right_transparent2",
+							"sid": 898906004590623,
+							"parameters": {
+								"height": "0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_up_tranparent2",
+							"sid": 263587437603778,
+							"parameters": {
+								"height": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 105687529232977,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "2_blok8",
+							"sid": 244702172295990
+						}
+					],
+					"sid": 128707550741979
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 425534628627799,
+							"parameters": {
+								"object": "2_jawaban8_false",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 505349413995655,
+							"parameters": {
+								"seconds": "2.0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_left_tranparent2",
+							"sid": 532347824422152,
+							"parameters": {
+								"height": "325"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_right_transparent2",
+							"sid": 734755499800926,
+							"parameters": {
+								"height": "325"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_up_tranparent2",
+							"sid": 144300172689738,
+							"parameters": {
+								"height": "325"
+							}
+						}
+					],
+					"sid": 761429918228077
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 901602727849437,
+							"parameters": {
+								"object": "2_jawaban8_right",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 286561050675050,
+							"parameters": {
+								"seconds": "2.0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_left_tranparent2",
+							"sid": 825069419577542,
+							"parameters": {
+								"height": "325"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_right_transparent2",
+							"sid": 662680887515301,
+							"parameters": {
+								"height": "325"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_up_tranparent2",
+							"sid": 971470861319945,
+							"parameters": {
+								"height": "325"
+							}
+						}
+					],
+					"sid": 957161462485089
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "girl",
+							"sid": 631087617742445,
+							"parameters": {
+								"object": "2_blok9"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-height",
+							"objectClass": "btn_left_tranparent2",
+							"sid": 708308042344005,
+							"parameters": {
+								"height": "0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_right_transparent2",
+							"sid": 298898890548378,
+							"parameters": {
+								"height": "0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_up_tranparent2",
+							"sid": 638119797845701,
+							"parameters": {
+								"height": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 991511640188149,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "2_blok9",
+							"sid": 499511784242965
+						}
+					],
+					"sid": 957046307601838
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 654034798943646,
+							"parameters": {
+								"object": "2_jawaban9_false",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 314843580035356,
+							"parameters": {
+								"seconds": "2.0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_left_tranparent2",
+							"sid": 307962586306533,
+							"parameters": {
+								"height": "325"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_right_transparent2",
+							"sid": 785032496988437,
+							"parameters": {
+								"height": "325"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_up_tranparent2",
+							"sid": 567987151841816,
+							"parameters": {
+								"height": "325"
+							}
+						}
+					],
+					"sid": 943637203882968
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 490768470549705,
+							"parameters": {
+								"object": "2_jawaban9_right",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 806884165872125,
+							"parameters": {
+								"seconds": "2.0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_left_tranparent2",
+							"sid": 495321815320760,
+							"parameters": {
+								"height": "325"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_right_transparent2",
+							"sid": 411820252086987,
+							"parameters": {
+								"height": "325"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_up_tranparent2",
+							"sid": 610464592936745,
+							"parameters": {
+								"height": "325"
+							}
+						}
+					],
+					"sid": 363329171016382
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "girl",
+							"sid": 114102231262476,
+							"parameters": {
+								"object": "2_blok10"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-height",
+							"objectClass": "btn_left_tranparent2",
+							"sid": 979488845258020,
+							"parameters": {
+								"height": "0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_right_transparent2",
+							"sid": 405803744455572,
+							"parameters": {
+								"height": "0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_up_tranparent2",
+							"sid": 471913911475833,
+							"parameters": {
+								"height": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 308793101947411,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "2_blok10",
+							"sid": 655465966574676
+						}
+					],
+					"sid": 273587379490082
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 620039700650120,
+							"parameters": {
+								"object": "2_jawaban10_false",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 212247652557703,
+							"parameters": {
+								"seconds": "2.0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_left_tranparent2",
+							"sid": 819531786890320,
+							"parameters": {
+								"height": "325"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_right_transparent2",
+							"sid": 682251900542910,
+							"parameters": {
+								"height": "325"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_up_tranparent2",
+							"sid": 566858582488139,
+							"parameters": {
+								"height": "325"
+							}
+						}
+					],
+					"sid": 772949940778378
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 679165816133960,
+							"parameters": {
+								"object": "2_jawaban10_right",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 290908521297436,
+							"parameters": {
+								"seconds": "2.0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_left_tranparent2",
+							"sid": 714284313869808,
+							"parameters": {
+								"height": "325"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_right_transparent2",
+							"sid": 500243631518060,
+							"parameters": {
+								"height": "325"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_up_tranparent2",
+							"sid": 218863139203926,
+							"parameters": {
+								"height": "325"
+							}
+						}
+					],
+					"sid": 220824508907035
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "girl",
+							"sid": 314907118388599,
+							"parameters": {
+								"object": "door"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-height",
+							"objectClass": "btn_left_tranparent2",
+							"sid": 223708282240497,
+							"parameters": {
+								"height": "0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_right_transparent2",
+							"sid": 711853621200944,
+							"parameters": {
+								"height": "0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_up_tranparent2",
+							"sid": 418402843824272,
+							"parameters": {
+								"height": "0"
+							}
+						}
+					],
+					"sid": 537303797464180
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 151518144253018,
+							"parameters": {
+								"variable": "heart",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-height",
+							"objectClass": "btn_left_tranparent2",
+							"sid": 301742848451440,
+							"parameters": {
+								"height": "0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_right_transparent2",
+							"sid": 467851192257800,
+							"parameters": {
+								"height": "0"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "btn_up_tranparent2",
+							"sid": 896344686244456,
+							"parameters": {
+								"height": "0"
+							}
+						}
+					],
+					"sid": 192825074380250
+				}
+			],
+			"sid": 938433411732950
+		}
+	],
+	"sid": 667979256975473
+}

@@ -1,0 +1,1078 @@
+{
+	"name": "Quiz3 ES",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "pertanyaan_3",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 604593159431334
+		},
+		{
+			"eventType": "variable",
+			"name": "jawabanBenar_3",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 544587122243391
+		},
+		{
+			"eventType": "variable",
+			"name": "skor_3",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 918120731497989
+		},
+		{
+			"eventType": "variable",
+			"name": "jml_soal_3",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 729689815918271
+		},
+		{
+			"eventType": "variable",
+			"name": "gameMulai3",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 310095972657777
+		},
+		{
+			"eventType": "variable",
+			"name": "timerquiz3",
+			"type": "number",
+			"initialValue": "600",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 262976041323556
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 360774610467686
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "btn_pauses",
+					"sid": 894819463461934,
+					"parameters": {
+						"instance-variable": "PauseX",
+						"value": "Self.Width"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "btn_pauses",
+					"sid": 840382016006687,
+					"parameters": {
+						"instance-variable": "PauseY",
+						"value": "Self.Height"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "btn_validation",
+					"sid": 280604886401445,
+					"parameters": {
+						"instance-variable": "validX",
+						"value": "Self.Width"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "btn_validation",
+					"sid": 891893292763642,
+					"parameters": {
+						"instance-variable": "validY",
+						"value": "Self.Height"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "jawaban_quiz3",
+					"sid": 372346379479277,
+					"parameters": {
+						"instance-variable": "btn_pilganX",
+						"value": "Self.Width"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "jawaban_quiz3",
+					"sid": 345558705499909,
+					"parameters": {
+						"instance-variable": "btn_pilganY",
+						"value": "Self.Height"
+					}
+				},
+				{
+					"id": "load",
+					"objectClass": "quiz3",
+					"sid": 554606869414556,
+					"parameters": {
+						"json": "\"{\"\"c2array\"\":true,\"\"size\"\":[10,4,1],\"\"data\"\":[\r\n[[\"\"Soal1\"\"],[\"\"#0\"\"],[\"\"#1\"\"],[0]],\r\n[[\"\"Soal2\"\"],[\"\"#2\"\"],[\"\"#3\"\"],[2]],\r\n[[\"\"Soal3\"\"],[\"\"#4\"\"],[\"\"#5\"\"],[5]],\r\n[[\"\"Soal4\"\"],[\"\"#6\"\"],[\"\"#7\"\"],[6]],\r\n[[\"\"Soal5\"\"],[\"\"#8\"\"],[\"\"#9\"\"],[9]],\r\n[[\"\"Soal6\"\"],[\"\"#10\"\"],[\"\"#11\"\"],[11]],\r\n[[\"\"Soal7\"\"],[\"\"#12\"\"],[\"\"#13\"\"],[12]],\r\n[[\"\"Soal8\"\"],[\"\"#14\"\"],[\"\"#15\"\"],[15]],\r\n[[\"\"Soal9\"\"],[\"\"#16\"\"],[\"\"#17\"\"],[17]],\r\n[[\"\"Soal10\"\"],[\"\"#18\"\"],[\"\"#19\"\"],[18]]\r\n]}\""
+					}
+				},
+				{
+					"callFunction": "Load_quiz3",
+					"sid": 644938458424306
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 873102205350310,
+					"parameters": {
+						"variable": "skor_3",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 693005829537595
+		},
+		{
+			"functionName": "Load_quiz3",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 524855040369970,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-empty",
+							"objectClass": "quiz3",
+							"sid": 987762055194092,
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 308594249761329,
+							"parameters": {
+								"variable": "pertanyaan_1",
+								"value": "int(random(quiz3.Width))"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "soal_quiz3",
+							"sid": 860270136424928,
+							"parameters": {
+								"frame-number": "int(tokenat(quiz3.At(pertanyaan_1,soal_quiz3.IID+1),1,\"#\"))"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "jawaban_quiz3",
+							"sid": 850800851026211,
+							"parameters": {
+								"frame-number": "int(tokenat(quiz3.At(pertanyaan_1,jawaban_quiz3.IID+1),1,\"#\"))"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 464317455684530,
+							"parameters": {
+								"variable": "jawabanBenar_1",
+								"value": "quiz3.At(pertanyaan_1,3)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "SpriteFont",
+							"sid": 995718530156042,
+							"parameters": {
+								"text": "quiz3.At(pertanyaan_1,0)"
+							}
+						},
+						{
+							"id": "delete",
+							"objectClass": "quiz3",
+							"sid": 643693662590366,
+							"parameters": {
+								"index": "pertanyaan_1",
+								"axis": "x"
+							}
+						}
+					],
+					"sid": 852781207909467
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 638932729859095
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-one-property",
+							"objectClass": "rect165u",
+							"sid": 166577548126211,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "offsetY",
+								"end-value": "LayoutHeight/2",
+								"time": "1",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "score_final",
+							"sid": 474411551989373,
+							"parameters": {
+								"text": "skor_1"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "TiledBackground12",
+							"sid": 510649809550002,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "path4",
+							"sid": 877926811503807
+						}
+					],
+					"sid": 336319637838319
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 396729764133588,
+					"parameters": {
+						"object": "jawaban_quiz3",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 100769162756495
+				}
+			],
+			"sid": 824744343681343,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "jawaban_quiz3",
+							"sid": 848340334563057,
+							"parameters": {
+								"comparison": 0,
+								"number": "jawabanBenar_1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 234910632422494,
+							"parameters": {
+								"variable": "skor_1",
+								"value": "10"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 344888570248889,
+							"parameters": {
+								"variable": "jml_soal_1",
+								"value": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 118345716490209,
+							"parameters": {
+								"audio-file": "right",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"sound\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 559090773338254,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 327771208106184
+						},
+						{
+							"callFunction": "Load_quiz3",
+							"sid": 854700784627503
+						}
+					],
+					"sid": 431758586729897
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 701167565568333
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 281967989751872,
+							"parameters": {
+								"variable": "skor_1",
+								"value": "0"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 402872661655208,
+							"parameters": {
+								"variable": "jml_soal_1",
+								"value": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 266248263441674,
+							"parameters": {
+								"audio-file": "wrong",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"sound\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 805207539366233,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 310875069604294
+						},
+						{
+							"callFunction": "Load_quiz3",
+							"sid": 925012377395720
+						}
+					],
+					"sid": 794943390469581
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 157788555779034,
+					"parameters": {
+						"object": "btn_pauses",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 220094835561226
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "btn_pauses",
+					"sid": 517618161656539,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "Self.PauseX +25",
+						"end-y": "Self.PauseY +25",
+						"time": "0.2",
+						"ease": "easeoutback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 127803135688929,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "btn_pauses",
+					"sid": 504571456091099,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "Self.PauseX",
+						"end-y": "Self.PauseY",
+						"time": "0.2",
+						"ease": "easeinback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "ui_pause",
+					"sid": 281759799834772,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetY",
+						"end-value": "LayoutHeight/2",
+						"time": "1",
+						"ease": "easeoutback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TiledBackground12",
+					"sid": 365804801132760,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 505471920208871
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 855609195412224,
+					"parameters": {
+						"object": "btn_validation",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 547215187439366,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "btn_validation",
+							"sid": 754880103496761,
+							"parameters": {
+								"comparison": 0,
+								"number": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-two-properties",
+							"objectClass": "btn_validation",
+							"sid": 295946395593209,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "Self.validX +50",
+								"end-y": "Self.validY +50",
+								"time": "0.2",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 313479440446673,
+							"parameters": {
+								"seconds": "0.2"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "btn_validation",
+							"sid": 223276839455184,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "Self.validX",
+								"end-y": "Self.validY",
+								"time": "0.2",
+								"ease": "easeinback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 471244552430018
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "ui_pause",
+							"sid": 798560127032773,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "offsetY",
+								"end-value": "-1500",
+								"time": "1",
+								"ease": "easeinback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "TiledBackground12",
+							"sid": 814727783878256,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 151410114196748
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "btn_validation",
+							"sid": 584061784795868,
+							"parameters": {
+								"comparison": 0,
+								"number": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-two-properties",
+							"objectClass": "btn_validation",
+							"sid": 974689965075771,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "Self.validX +50",
+								"end-y": "Self.validY +50",
+								"time": "0.2",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 300082927000080,
+							"parameters": {
+								"seconds": "0.2"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "btn_validation",
+							"sid": 137296272447316,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "Self.validX",
+								"end-y": "Self.validY",
+								"time": "0.2",
+								"ease": "easeinback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "reset-global-variables",
+							"objectClass": "System",
+							"sid": 397250277835512,
+							"parameters": {
+								"reset-static": false
+							}
+						},
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 558981779875712
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 784565268704469,
+							"parameters": {
+								"layout": "Menu Layout"
+							}
+						}
+					],
+					"sid": 667249576819727
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 649279283728536,
+					"parameters": {
+						"interval-seconds": "0.1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-width",
+					"objectClass": "TiledBackground11",
+					"sid": 252326329445210,
+					"parameters": {
+						"width": "Self.Width-2"
+					}
+				}
+			],
+			"sid": 455332372324031
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-width",
+					"objectClass": "TiledBackground11",
+					"sid": 202694090883204,
+					"parameters": {
+						"comparison": 3,
+						"width": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-one-property",
+					"objectClass": "path4",
+					"sid": 338384144742958,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetY",
+						"end-value": "LayoutHeight/2",
+						"time": "1",
+						"ease": "easeoutback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "set-width",
+					"objectClass": "TiledBackground11",
+					"sid": 644112566374914,
+					"parameters": {
+						"width": "0"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TiledBackground12",
+					"sid": 697176978186711,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 585294304985640
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 672784986678212
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "1home",
+					"sid": 868914866767619,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "path4",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "1restart",
+					"sid": 603148829579328,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "path4",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TiledBackground12",
+					"sid": 130369843897316,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "1_nextlevel",
+					"sid": 999210699483544,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "rect165u",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "1_home",
+					"sid": 993633982588050,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "rect165u",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "1_restart",
+					"sid": 917232109288391,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "rect165u",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "score_final",
+					"sid": 606394872488733,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "rect165u",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 616826721965801
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 471646091581463,
+					"parameters": {
+						"object": "1home",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 492872652749986,
+					"parameters": {
+						"layout": "Menu Layout"
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 858150376831655
+				}
+			],
+			"sid": 737546044912602
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 996715239619283,
+					"parameters": {
+						"object": "1restart",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 765051685240683,
+					"parameters": {
+						"layout": "Quiz3 Layout"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TiledBackground12",
+					"sid": 214189583738859,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 233354367164921
+				}
+			],
+			"sid": 687041718399497
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 712657306446446,
+					"parameters": {
+						"object": "1_nextlevel",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 249672812391588
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 134764604669716,
+					"parameters": {
+						"layout": "Platformer 4 Layout"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TiledBackground12",
+					"sid": 973505551200243,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 154419281237898,
+					"parameters": {
+						"variable": "skor_3",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 207689919936379
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 311090117284743,
+					"parameters": {
+						"object": "1_home",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 663687121539274,
+					"parameters": {
+						"layout": "Menu Layout"
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 297046606149692
+				}
+			],
+			"sid": 723390104509632
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 509084633635032,
+					"parameters": {
+						"object": "1_restart",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 485277662655007,
+					"parameters": {
+						"layout": "Quiz4 Layout"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TiledBackground12",
+					"sid": 131465040776791,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 829402281675533
+		}
+	],
+	"sid": 134328636409054
+}

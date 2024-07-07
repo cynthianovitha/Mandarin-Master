@@ -1,0 +1,15 @@
+{
+	"name": "score",
+	"plugin-id": "Text",
+	"sid": 861990516730616,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 660257654365091
+		}
+	],
+	"effectTypes": []
+}

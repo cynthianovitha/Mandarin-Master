@@ -1,0 +1,27 @@
+{
+	"name": "1_nextlevel4",
+	"plugin-id": "TiledBg",
+	"sid": 159695848575610,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 567327029919884
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 250,
+		"height": 250,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 3274562,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

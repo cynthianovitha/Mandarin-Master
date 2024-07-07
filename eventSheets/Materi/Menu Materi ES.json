@@ -1,0 +1,360 @@
+{
+	"name": "Menu Materi ES",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 828676250257985,
+					"parameters": {
+						"object": "btn_back",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btn_back",
+					"sid": 872996823661733,
+					"parameters": {
+						"width": "200",
+						"height": "200"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 285013034395308,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "btn_back",
+					"sid": 942861577560717,
+					"parameters": {
+						"width": "220",
+						"height": "220"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 993824560288945,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 751264267350591,
+					"parameters": {
+						"layout": "Menu Layout"
+					}
+				}
+			],
+			"sid": 506850197186428
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 684889076413731,
+					"parameters": {
+						"object": "btn",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btn",
+					"sid": 868917334164268,
+					"parameters": {
+						"width": "374.622893",
+						"height": "377.884239"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 844742222602857,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "btn",
+					"sid": 635938055745224,
+					"parameters": {
+						"width": "394.622893",
+						"height": "397.884239"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 875605622430559,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 138490626535156,
+					"parameters": {
+						"layout": "Materi1  Layout"
+					}
+				}
+			],
+			"sid": 825987520529774
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 885960298105754,
+					"parameters": {
+						"object": "btn2",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btn2",
+					"sid": 733302744626284,
+					"parameters": {
+						"width": "374.622893",
+						"height": "377.884239"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 364737647493134,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "btn2",
+					"sid": 477138034802151,
+					"parameters": {
+						"width": "394.622893",
+						"height": "397.884239"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 438649097439396,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 908063439066882,
+					"parameters": {
+						"layout": "Materi2 Layout"
+					}
+				}
+			],
+			"sid": 839294816574500
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 309829068365015,
+					"parameters": {
+						"object": "btn3",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btn3",
+					"sid": 620540468835672,
+					"parameters": {
+						"width": "374.622893",
+						"height": "377.884239"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 227785005806068,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "btn3",
+					"sid": 858365803372272,
+					"parameters": {
+						"width": "394.622893",
+						"height": "397.884239"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 817476827456818,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 881557794734391,
+					"parameters": {
+						"layout": "Materi3 Layout"
+					}
+				}
+			],
+			"sid": 380299104245000
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 100970183496588,
+					"parameters": {
+						"object": "btn4",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btn4",
+					"sid": 735572179871233,
+					"parameters": {
+						"width": "374.622893",
+						"height": "377.884239"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 294704801095782,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "btn4",
+					"sid": 731365605645050,
+					"parameters": {
+						"width": "394.622893",
+						"height": "397.884239"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 918505695952103,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 780105252302520,
+					"parameters": {
+						"layout": "Materi4 Layout"
+					}
+				}
+			],
+			"sid": 156665818798499
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 711298876596076,
+					"parameters": {
+						"object": "btn5",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btn5",
+					"sid": 667905256416582,
+					"parameters": {
+						"width": "374.622893",
+						"height": "377.884239"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 655326368955282,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "btn5",
+					"sid": 856448826358816,
+					"parameters": {
+						"width": "394.622893",
+						"height": "397.884239"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 892513658888920,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 975262374602603,
+					"parameters": {
+						"layout": "Materi5 Layout"
+					}
+				}
+			],
+			"sid": 237095028297419
+		}
+	],
+	"sid": 439298999231435
+}

@@ -1,0 +1,27 @@
+{
+	"name": "1_restart4",
+	"plugin-id": "TiledBg",
+	"sid": 883915752129050,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 374774393285541
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 250,
+		"height": 250,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 6313025,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

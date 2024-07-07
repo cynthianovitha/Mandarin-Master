@@ -1,0 +1,1830 @@
+{
+	"name": "Memory5 ES",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "CARDSMAXHEIGHT5",
+			"type": "number",
+			"initialValue": "6",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 214239026366011
+		},
+		{
+			"eventType": "variable",
+			"name": "ActiveCards5",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 235852007416520
+		},
+		{
+			"eventType": "variable",
+			"name": "ReadyCards5",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 514147435632874
+		},
+		{
+			"eventType": "variable",
+			"name": "Pause5",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 150409053956952
+		},
+		{
+			"eventType": "variable",
+			"name": "timer5",
+			"type": "number",
+			"initialValue": "600",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 428666248504530
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Random Kartu5",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 126528210612310
+						}
+					],
+					"actions": [
+						{
+							"id": "scroll-to-x",
+							"objectClass": "System",
+							"sid": 579239593025399,
+							"parameters": {
+								"x": "LayoutWidth / 2"
+							}
+						},
+						{
+							"id": "scroll-to-y",
+							"objectClass": "System",
+							"sid": 897503768344974,
+							"parameters": {
+								"y": "LayoutHeight / 2"
+							}
+						}
+					],
+					"sid": 466000371240198
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 531589086617932
+						}
+					],
+					"actions": [
+						{
+							"id": "set-size",
+							"objectClass": "CardsRandomizer5",
+							"sid": 823770716376960,
+							"parameters": {
+								"width": "Card5.Count",
+								"height": "3",
+								"depth": "1"
+							}
+						}
+					],
+					"sid": 592593103499767,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for-each",
+									"objectClass": "System",
+									"sid": 961679190017964,
+									"parameters": {
+										"object": "Card5"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-at-xy",
+									"objectClass": "CardsRandomizer5",
+									"sid": 435447485602327,
+									"parameters": {
+										"x": "loopindex",
+										"y": "0",
+										"value": "Card5.UID"
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "CardsRandomizer5",
+									"sid": 958940165061251,
+									"parameters": {
+										"x": "loopindex",
+										"y": "1",
+										"value": "Card5.X"
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "CardsRandomizer5",
+									"sid": 238542720582782,
+									"parameters": {
+										"x": "loopindex",
+										"y": "2",
+										"value": "Card5.Y"
+									}
+								}
+							],
+							"sid": 366593254262853
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "createPermutationTable",
+									"objectClass": "AdvancedRandom",
+									"sid": 987730840899193,
+									"parameters": {
+										"length": "CardsRandomizer5.Width",
+										"offset": "0"
+									}
+								}
+							],
+							"sid": 226603732530998
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for",
+									"objectClass": "System",
+									"sid": 283758753097478,
+									"parameters": {
+										"name": "\"shuffle_array\"",
+										"start-index": "0",
+										"end-index": "CardsRandomizer5.Width - 1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "log",
+									"objectClass": "Browser",
+									"sid": 784024160312844,
+									"parameters": {
+										"type": "log",
+										"message": "\"----//----\"\n&newline&\n\"Loop index: \"&loopindex(\"shuffle_array\")\n&newline&\n\"Random number: \"&CardsRandomizer5.At(AdvancedRandom.Permutation(loopindex(\"shuffle_array\")), 0)\n"
+									}
+								}
+							],
+							"sid": 253644120463363,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-by-unique-id",
+											"objectClass": "Card5",
+											"sid": 756055932338864,
+											"parameters": {
+												"unique-id": "CardsRandomizer5.At(AdvancedRandom.Permutation(loopindex(\"shuffle_array\")), 0)"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "tween-two-properties",
+											"objectClass": "Card5",
+											"sid": 891365128958057,
+											"behaviorType": "beh_tween",
+											"parameters": {
+												"tags": "\"PositionRandom\"",
+												"property": "position",
+												"end-x": "CardsRandomizer5.At(loopindex(\"shuffle_array\"), 1)",
+												"end-y": "CardsRandomizer5.At(loopindex(\"shuffle_array\"), 2)",
+												"time": "1",
+												"ease": "easeinoutsine",
+												"destroy-on-complete": "no",
+												"loop": "no",
+												"ping-pong": "no",
+												"repeat-count": "1"
+											}
+										}
+									],
+									"sid": 516784529488049
+								}
+							]
+						}
+					]
+				}
+			],
+			"sid": 636333743668318
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Kartu Dipilih5",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "SelectedArea5",
+							"sid": 405067562916942
+						}
+					],
+					"actions": [
+						{
+							"id": "set-size",
+							"objectClass": "SelectedArea5",
+							"sid": 756262212281904,
+							"parameters": {
+								"width": "Card5.ImageWidth + 2",
+								"height": "Card5.ImageHeight + 2"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "SelectedArea5",
+							"sid": 971528175393404,
+							"behaviorType": "beh_tween",
+							"parameters": {
+								"tags": "\"SizeSine\"",
+								"property": "size",
+								"end-x": "Self.Width - 2",
+								"end-y": "Self.Height - 2",
+								"time": "0.25",
+								"ease": "easeinoutsine",
+								"destroy-on-complete": "no",
+								"loop": "yes",
+								"ping-pong": "yes",
+								"repeat-count": "1"
+							}
+						}
+					],
+					"sid": 855238784363582
+				}
+			],
+			"sid": 259972482872315
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Kartu Aktif5",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 760636194315510,
+							"parameters": {
+								"object": "Card5",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 961514744078473,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Card5",
+									"sid": 296978709243963,
+									"parameters": {
+										"instance-variable": "Active"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "CountActiveCards",
+									"sid": 400754269715245
+								}
+							],
+							"sid": 355666470095329,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 516262124018867,
+											"parameters": {
+												"variable": "ActiveCards",
+												"comparison": 2,
+												"value": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Card5",
+											"sid": 616184621942223,
+											"parameters": {
+												"instance-variable": "Active",
+												"value": "true"
+											}
+										},
+										{
+											"callFunction": "CountActiveCards",
+											"sid": 901642808333513
+										},
+										{
+											"id": "tween-one-property",
+											"objectClass": "Card5",
+											"sid": 250094569624842,
+											"behaviorType": "beh_tween",
+											"parameters": {
+												"tags": "\"ZElevationUp\"",
+												"property": "offsetZElevation",
+												"end-value": "CardsMaxHeight",
+												"time": "0.5",
+												"ease": "easeinoutsine",
+												"destroy-on-complete": "no",
+												"loop": "no",
+												"ping-pong": "no",
+												"repeat-count": "1"
+											}
+										}
+									],
+									"sid": 612758693198166
+								}
+							]
+						}
+					],
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tweens-finished",
+							"objectClass": "Card5",
+							"sid": 938570705735712,
+							"behaviorType": "beh_tween",
+							"parameters": {
+								"tags": "\"ZElevationUp\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-one-property",
+							"objectClass": "Card5",
+							"sid": 552796465783508,
+							"behaviorType": "beh_tween",
+							"parameters": {
+								"tags": "\"Width1\"",
+								"property": "offsetWidth",
+								"end-value": "0",
+								"time": "0.25",
+								"ease": "easeinsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						}
+					],
+					"sid": 200226876820619
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tweens-finished",
+							"objectClass": "Card5",
+							"sid": 172866810791414,
+							"behaviorType": "beh_tween",
+							"parameters": {
+								"tags": "\"Width1\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-one-property",
+							"objectClass": "Card5",
+							"sid": 272645708592313,
+							"behaviorType": "beh_tween",
+							"parameters": {
+								"tags": "\"Width2\"",
+								"property": "offsetWidth",
+								"end-value": "Self.ImageWidth",
+								"time": "0.25",
+								"ease": "easeoutsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Card5",
+							"sid": 765245943589697,
+							"parameters": {
+								"animation": "\"Front\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Card5",
+							"sid": 732385826286598,
+							"parameters": {
+								"frame-number": "Self.CardIndex"
+							}
+						}
+					],
+					"sid": 152324992039934
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tweens-finished",
+							"objectClass": "Card5",
+							"sid": 641217615213366,
+							"behaviorType": "beh_tween",
+							"parameters": {
+								"tags": "\"Width2\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Card5",
+							"sid": 945427439343113,
+							"parameters": {
+								"instance-variable": "Ready",
+								"value": "true"
+							}
+						},
+						{
+							"callFunction": "CountReadyCards5",
+							"sid": 571535289458632
+						},
+						{
+							"callFunction": "TestCards5",
+							"sid": 770289140867151
+						}
+					],
+					"sid": 803373656920195
+				},
+				{
+					"functionName": "TestCards5",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 752462280451894,
+							"parameters": {
+								"variable": "ReadyCards",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "clear",
+							"objectClass": "SelectedCards5",
+							"sid": 200479254265079,
+							"parameters": {
+								"value": "-1"
+							}
+						}
+					],
+					"sid": 590484162549232,
+					"children": [
+						{
+							"eventType": "variable",
+							"name": "Step",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 696992433969812
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for-each",
+									"objectClass": "System",
+									"sid": 130097675349472,
+									"parameters": {
+										"object": "Card5"
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Card5",
+									"sid": 196961937541305,
+									"parameters": {
+										"instance-variable": "Ready"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-at-x",
+									"objectClass": "SelectedCards5",
+									"sid": 953094802158487,
+									"parameters": {
+										"x": "Step",
+										"value": "Card5.CardIndex"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 704195431317478,
+									"parameters": {
+										"variable": "Step",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 425110884429268
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 142599260695987,
+									"parameters": {
+										"first-value": "SelectedCards5.At(0)",
+										"comparison": 0,
+										"second-value": "SelectedCards5.At(1)"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 263387425301116,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "for-each",
+											"objectClass": "System",
+											"sid": 310118476145894,
+											"parameters": {
+												"object": "Card5"
+											}
+										},
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Card5",
+											"sid": 674043950077158,
+											"parameters": {
+												"instance-variable": "Ready"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Card5",
+											"sid": 324316467967764,
+											"parameters": {
+												"object": "Flash5",
+												"layer": "\"lay_cards\"",
+												"image-point": "0",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-z-elevation",
+											"objectClass": "Flash5",
+											"sid": 758843583569737,
+											"parameters": {
+												"z": "Card5.ZElevation"
+											}
+										},
+										{
+											"id": "set-y",
+											"objectClass": "Flash5",
+											"sid": 822676419956814,
+											"parameters": {
+												"y": "LayoutHeight / 2"
+											}
+										},
+										{
+											"id": "set-size",
+											"objectClass": "Flash5",
+											"sid": 580012229217638,
+											"parameters": {
+												"width": "Card5.ImageWidth",
+												"height": "LayoutHeight"
+											}
+										},
+										{
+											"id": "tween-one-property",
+											"objectClass": "Flash5",
+											"sid": 493584411876601,
+											"behaviorType": "beh_tween",
+											"parameters": {
+												"tags": "\"WidthDown\"",
+												"property": "offsetWidth",
+												"end-value": "0",
+												"time": "0.5",
+												"ease": "easeinsine",
+												"destroy-on-complete": "no",
+												"loop": "no",
+												"ping-pong": "no",
+												"repeat-count": "1"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Card5",
+											"sid": 327908986400488,
+											"parameters": {
+												"object": "GlowParticles5",
+												"layer": "\"lay_cards\"",
+												"image-point": "0",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "destroy",
+											"objectClass": "Card5",
+											"sid": 205263632591612
+										},
+										{
+											"callFunction": "CountActiveCards",
+											"sid": 133801002793979
+										},
+										{
+											"callFunction": "CountReadyCards",
+											"sid": 110311774526937
+										}
+									],
+									"sid": 598689435436452
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 789905615649404,
+									"parameters": {
+										"first-value": "SelectedCards5.At(0)",
+										"comparison": 1,
+										"second-value": "SelectedCards5.At(1)"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 822386482564639,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "for-each",
+											"objectClass": "System",
+											"sid": 638709423153983,
+											"parameters": {
+												"object": "Card5"
+											}
+										},
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Card5",
+											"sid": 335655555613105,
+											"parameters": {
+												"instance-variable": "Ready"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Card5",
+											"sid": 529550627209030,
+											"parameters": {
+												"instance-variable": "Ready",
+												"value": "false"
+											}
+										},
+										{
+											"callFunction": "CountReadyCards",
+											"sid": 221906488862148
+										},
+										{
+											"id": "tween-one-property",
+											"objectClass": "Card5",
+											"sid": 246621505639661,
+											"behaviorType": "beh_tween",
+											"parameters": {
+												"tags": "\"Width3\"",
+												"property": "offsetWidth",
+												"end-value": "0",
+												"time": "0.25",
+												"ease": "easeinsine",
+												"destroy-on-complete": "no",
+												"loop": "no",
+												"ping-pong": "no",
+												"repeat-count": "1"
+											}
+										}
+									],
+									"sid": 805869738833591
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tweens-finished",
+							"objectClass": "Card5",
+							"sid": 916226968813738,
+							"behaviorType": "beh_tween",
+							"parameters": {
+								"tags": "\"Width3\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-one-property",
+							"objectClass": "Card5",
+							"sid": 232312879020443,
+							"behaviorType": "beh_tween",
+							"parameters": {
+								"tags": "\"Width4\"",
+								"property": "offsetWidth",
+								"end-value": "Self.ImageWidth",
+								"time": "0.25",
+								"ease": "easeoutsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Card5",
+							"sid": 955793275677279,
+							"parameters": {
+								"animation": "\"Back\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Card5",
+							"sid": 879744724262045,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
+					"sid": 278688382639144
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tweens-finished",
+							"objectClass": "Card5",
+							"sid": 759854939575742,
+							"behaviorType": "beh_tween",
+							"parameters": {
+								"tags": "\"Width4\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-one-property",
+							"objectClass": "Card5",
+							"sid": 875759668714662,
+							"behaviorType": "beh_tween",
+							"parameters": {
+								"tags": "\"ZElevationDown\"",
+								"property": "offsetZElevation",
+								"end-value": "0",
+								"time": "0.5",
+								"ease": "easeinoutsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						}
+					],
+					"sid": 601008288812494
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tweens-finished",
+							"objectClass": "Card5",
+							"sid": 181153414498825,
+							"behaviorType": "beh_tween",
+							"parameters": {
+								"tags": "\"ZElevationDown\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Card5",
+							"sid": 592343070757287,
+							"parameters": {
+								"instance-variable": "Active",
+								"value": "false"
+							}
+						},
+						{
+							"callFunction": "CountActiveCards",
+							"sid": 965588480214507
+						}
+					],
+					"sid": 182233928171062
+				},
+				{
+					"functionName": "CountActiveCards5",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 440550719852795,
+							"parameters": {
+								"variable": "ActiveCards",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 528002827765108,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for-each",
+									"objectClass": "System",
+									"sid": 386406689374901,
+									"parameters": {
+										"object": "Card5"
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Card5",
+									"sid": 255273848588985,
+									"parameters": {
+										"instance-variable": "Active"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 735740732417167,
+									"parameters": {
+										"variable": "ActiveCards",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 687530968218163
+						}
+					]
+				},
+				{
+					"functionName": "CountReadyCards5",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 921134826344874,
+							"parameters": {
+								"variable": "ReadyCards",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 270257454584171,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for-each",
+									"objectClass": "System",
+									"sid": 480499020609493,
+									"parameters": {
+										"object": "Card5"
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Card5",
+									"sid": 747357367073470,
+									"parameters": {
+										"instance-variable": "Ready"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 163262306291961,
+									"parameters": {
+										"variable": "ReadyCards",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 635216696057304
+						}
+					]
+				}
+			],
+			"sid": 432589275974328
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Bayangan5",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "CardShadow5",
+							"sid": 254238992483937
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "CardShadow5",
+							"sid": 351442847773358,
+							"parameters": {
+								"object": "Card5",
+								"image-point-optional": "0"
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "CardShadow5",
+							"sid": 834833235550797,
+							"behaviorType": "beh_pin",
+							"parameters": {
+								"pin-to": "Card5",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "absolute",
+								"height-type": "absolute",
+								"z": false
+							}
+						},
+						{
+							"id": "move-to-layer",
+							"objectClass": "CardShadow5",
+							"sid": 900365231725169,
+							"parameters": {
+								"layer": "\"lay_table\""
+							}
+						},
+						{
+							"id": "move-to-object",
+							"objectClass": "CardShadow5",
+							"sid": 613156842467080,
+							"parameters": {
+								"where": "in-front",
+								"object": "bg_blur"
+							}
+						}
+					],
+					"sid": 663085018540365
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 348359097057699
+						}
+					],
+					"actions": [],
+					"sid": 253532884317736,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for-each",
+									"objectClass": "System",
+									"sid": 745285662329464,
+									"parameters": {
+										"object": "CardShadow5"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-opacity",
+									"objectClass": "CardShadow5",
+									"sid": 572033886450995,
+									"parameters": {
+										"opacity": "50 - ((100 / 32) * Card5.ZElevation / 4)"
+									}
+								}
+							],
+							"sid": 121179394883069
+						}
+					]
+				}
+			],
+			"sid": 592124983734663
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Sisa Pasangan5",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 186640542611773
+						}
+					],
+					"actions": [],
+					"sid": 439293931762502,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-comparison",
+									"objectClass": "System",
+									"sid": 878256129246106,
+									"parameters": {
+										"object": "Text2",
+										"expression": "Text2.FontID",
+										"comparison": 0,
+										"value": "\"HUD\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "Text2",
+									"sid": 676669479973806,
+									"parameters": {
+										"text": "Card5.Count / 2"
+									}
+								}
+							],
+							"sid": 174476132588966
+						}
+					]
+				}
+			],
+			"sid": 913799788503506
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Pause6",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 733805375840534,
+							"parameters": {
+								"object": "btn_pause",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 445844297537321,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 372033775583186,
+									"parameters": {
+										"variable": "Pause",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-time-scale",
+									"objectClass": "System",
+									"sid": 763105453257217,
+									"parameters": {
+										"time-scale": "0"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 397903593853551,
+									"parameters": {
+										"variable": "Pause",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 409810425525667
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 359766789944503
+								}
+							],
+							"actions": [
+								{
+									"id": "set-time-scale",
+									"objectClass": "System",
+									"sid": 177411144854783,
+									"parameters": {
+										"time-scale": "1"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 884132974631647,
+									"parameters": {
+										"variable": "Pause",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 419710117452330
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btn_pause",
+									"sid": 452919162327119,
+									"parameters": {
+										"frame-number": "Pause"
+									}
+								}
+							],
+							"sid": 492821411584744
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 139474897158513,
+							"parameters": {
+								"object": "btn_home",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 730537975492881,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 175644329204876,
+									"parameters": {
+										"variable": "Pause",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-time-scale",
+									"objectClass": "System",
+									"sid": 161669937481160,
+									"parameters": {
+										"time-scale": "1"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 825700121024129,
+									"parameters": {
+										"variable": "Pause",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 989365860095654
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 334182400779957,
+							"parameters": {
+								"object": "btn_home",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 814810302306640,
+							"parameters": {
+								"layout": "Menu Layout"
+							}
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 406078853497234
+						}
+					],
+					"sid": 282814916739248
+				}
+			],
+			"sid": 808778772630329
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Timer5",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 507213461454278,
+							"parameters": {
+								"interval-seconds": "0.1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-width",
+							"objectClass": "TiledBackground11",
+							"sid": 243187002358372,
+							"parameters": {
+								"width": "Self.Width-2"
+							}
+						}
+					],
+					"sid": 734219036229551
+				}
+			],
+			"sid": 992249782678065
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Level Complete8",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 430449500754057,
+							"parameters": {
+								"first-value": "Card5.Count",
+								"comparison": 0,
+								"second-value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-one-property",
+							"objectClass": "rect165u",
+							"sid": 873768280301508,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "offsetY",
+								"end-value": "LayoutHeight/2",
+								"time": "1",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "TiledBackground12",
+							"sid": 309751320297485,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 522839585706907
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 246563407855356
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "memory1_nextlevel",
+							"sid": 874080181952023,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "rect165u",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "memory1_home",
+							"sid": 356737989574244,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "rect165u",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "memory1restart",
+							"sid": 905782247608394,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "rect165u",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "star0",
+							"sid": 974897669362682,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "rect165u",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "star3",
+							"sid": 363630656917354,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "rect165u",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 805086127436271
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 313001334132506,
+							"parameters": {
+								"object": "memory1_nextlevel",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 267401309613952
+						}
+					],
+					"sid": 606203962868310
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 264402911342870,
+							"parameters": {
+								"object": "memory1_home",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 242212087080714,
+							"parameters": {
+								"layout": "Menu Layout"
+							}
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 684602237379085
+						}
+					],
+					"sid": 311265595364297
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 356479005693215,
+							"parameters": {
+								"object": "memory1restart",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 967574155189053,
+							"parameters": {
+								"layout": "Memory5 Layout"
+							}
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 501781889693710
+						}
+					],
+					"sid": 609699870830001
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 141980295873974,
+							"parameters": {
+								"first-value": "Card5.Count",
+								"comparison": 0,
+								"second-value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 108499018891151,
+							"parameters": {
+								"seconds": "2.0"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "star3",
+							"sid": 745646301111160,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "path5",
+							"sid": 202877841795381
+						}
+					],
+					"sid": 407023240364342
+				}
+			],
+			"sid": 940918361434586
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Game Over8",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 308089868872419
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "memory1home",
+							"sid": 576851450911400,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "path5",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "memory1_restart",
+							"sid": 373687426984694,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "path5",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "TiledBackground12",
+							"sid": 773845164731183,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 121016342539525
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-width",
+							"objectClass": "TiledBackground11",
+							"sid": 783350816876946,
+							"parameters": {
+								"comparison": 3,
+								"width": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-one-property",
+							"objectClass": "path5",
+							"sid": 375586867727709,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "offsetY",
+								"end-value": "LayoutHeight/2",
+								"time": "1",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "set-width",
+							"objectClass": "TiledBackground11",
+							"sid": 900650052779065,
+							"parameters": {
+								"width": "0"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "TiledBackground12",
+							"sid": 441107329950011,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 593952850127771
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 432066234662308,
+							"parameters": {
+								"object": "memory1home",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 522672816774534,
+							"parameters": {
+								"layout": "Menu Layout"
+							}
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 259179073183685
+						}
+					],
+					"sid": 973930898514969
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 502124005453490,
+							"parameters": {
+								"object": "memory1_restart",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 223016354423675
+						}
+					],
+					"sid": 819156460363852
+				}
+			],
+			"sid": 927205314668005
+		}
+	],
+	"sid": 335709286440415
+}

@@ -1,0 +1,360 @@
+{
+	"name": "Menu Memory ES",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 358797998463790,
+					"parameters": {
+						"object": "btn_back",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btn_back",
+					"sid": 631509355434049,
+					"parameters": {
+						"width": "200",
+						"height": "200"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 482363723376485,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "btn_back",
+					"sid": 238347374667363,
+					"parameters": {
+						"width": "220",
+						"height": "220"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 728253506978869,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 731305234079157,
+					"parameters": {
+						"layout": "Menu Layout"
+					}
+				}
+			],
+			"sid": 657955549083894
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 304273788546290,
+					"parameters": {
+						"object": "g",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "g",
+					"sid": 887160972802288,
+					"parameters": {
+						"width": "374.622893",
+						"height": "377.884239"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 251639887908818,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "g",
+					"sid": 133751159059658,
+					"parameters": {
+						"width": "394.622893",
+						"height": "397.884239"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 293078062295675,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 973902736852064,
+					"parameters": {
+						"layout": "Memory1 Layout"
+					}
+				}
+			],
+			"sid": 407687744126612
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 357690799338248,
+					"parameters": {
+						"object": "g2",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "g2",
+					"sid": 145542681349517,
+					"parameters": {
+						"width": "374.622893",
+						"height": "377.884239"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 848784173444764,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "g2",
+					"sid": 529498895497338,
+					"parameters": {
+						"width": "394.622893",
+						"height": "397.884239"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 304404956283174,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 338221219098556,
+					"parameters": {
+						"layout": "Memory2 Layout"
+					}
+				}
+			],
+			"sid": 885297049675513
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 285146817678791,
+					"parameters": {
+						"object": "g3",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "g3",
+					"sid": 750653053082647,
+					"parameters": {
+						"width": "374.622893",
+						"height": "377.884239"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 493177290781687,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "g3",
+					"sid": 525775615332499,
+					"parameters": {
+						"width": "394.622893",
+						"height": "397.884239"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 579468561355669,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 230503366672578,
+					"parameters": {
+						"layout": "Memory3 Layout"
+					}
+				}
+			],
+			"sid": 227872685782979
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 977854602858148,
+					"parameters": {
+						"object": "g4",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "g4",
+					"sid": 728501207940632,
+					"parameters": {
+						"width": "374.622893",
+						"height": "377.884239"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 274197748157534,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "g4",
+					"sid": 185496142116567,
+					"parameters": {
+						"width": "394.622893",
+						"height": "397.884239"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 639195382337105,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 968448975347536,
+					"parameters": {
+						"layout": "Memory4 Layout"
+					}
+				}
+			],
+			"sid": 548894526914811
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 566255516629891,
+					"parameters": {
+						"object": "g5",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "g5",
+					"sid": 699832047427972,
+					"parameters": {
+						"width": "374.622893",
+						"height": "377.884239"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 384694742714894,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "g5",
+					"sid": 494127675224517,
+					"parameters": {
+						"width": "394.622893",
+						"height": "397.884239"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 239267924923510,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 568140052683364,
+					"parameters": {
+						"layout": "Memory5 Layout"
+					}
+				}
+			],
+			"sid": 903738449252274
+		}
+	],
+	"sid": 289126457280989
+}

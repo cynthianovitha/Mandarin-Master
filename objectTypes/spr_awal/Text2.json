@@ -1,0 +1,17 @@
+{
+	"name": "Text2",
+	"plugin-id": "Text",
+	"sid": 836281819878932,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "FontID",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 295038400089653
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

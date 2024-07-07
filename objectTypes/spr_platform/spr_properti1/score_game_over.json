@@ -1,0 +1,15 @@
+{
+	"name": "score_game_over",
+	"plugin-id": "Text",
+	"sid": 940727161016368,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 900410540072315
+		}
+	],
+	"effectTypes": []
+}

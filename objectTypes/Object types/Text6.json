@@ -1,0 +1,17 @@
+{
+	"name": "Text6",
+	"plugin-id": "Text",
+	"sid": 985863880304025,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "FontID",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 736503178010147
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

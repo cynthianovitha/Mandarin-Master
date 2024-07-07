@@ -1,0 +1,27 @@
+{
+	"name": "SelectedArea4",
+	"plugin-id": "NinePatch",
+	"sid": 679156214099337,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "beh_tween",
+			"sid": 207523692123693
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 4,
+		"height": 4,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 4808246,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

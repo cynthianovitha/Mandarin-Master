@@ -1,0 +1,32 @@
+{
+	"name": "1_jawaban1_right",
+	"plugin-id": "TiledBg",
+	"sid": 892846238743719,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 117558306773795
+		},
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 460289524026658
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 250,
+		"height": 250,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 7624300,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

@@ -1,0 +1,93 @@
+{
+	"name": "Splashscreen ES",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 223351019663020
+				}
+			],
+			"actions": [
+				{
+					"id": "set-width",
+					"objectClass": "spr_loadingbar",
+					"sid": 274306789028146,
+					"parameters": {
+						"width": "spr_loadingbar.Width + 5"
+					}
+				}
+			],
+			"sid": 958674148199522
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-width",
+					"objectClass": "spr_loadingbar",
+					"sid": 617996578733485,
+					"parameters": {
+						"comparison": 0,
+						"width": "920"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 423417780974311,
+					"parameters": {
+						"layout": "Utama Layout"
+					}
+				}
+			],
+			"sid": 152596339940115
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-on-screen",
+					"objectClass": "girl_start",
+					"sid": 460078052338143
+				}
+			],
+			"actions": [],
+			"sid": 149713470830146,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "girl_start",
+							"sid": 477692869712904,
+							"parameters": {
+								"instance-variable": "Move",
+								"comparison": 0,
+								"value": "\"right\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "girl_start",
+							"sid": 648838184018658,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "right"
+							}
+						}
+					],
+					"sid": 304399930988737
+				}
+			]
+		}
+	],
+	"sid": 288552041597693
+}

@@ -1,0 +1,56 @@
+{
+	"name": "spr_tentanggame",
+	"plugin-id": "Sprite",
+	"sid": 724155817085082,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1064,
+						"height": 676,
+						"originX": 0.5,
+						"originY": 0.5266272189349113,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2325595,
+						"collisionPoly": {
+							"points": [
+								0.7744360902255639,
+								0.0014792899408284023,
+								0.856203007518797,
+								0.0029585798816568047,
+								0.9981203007518797,
+								0.128698224852071,
+								0.9661654135338346,
+								0.9985207100591716,
+								0.0018796992481203006,
+								0.9304733727810651,
+								0.03571428571428571,
+								0.05473372781065089,
+								0.17293233082706766,
+								0.03106508875739645
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 371333099757856,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

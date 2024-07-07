@@ -1,0 +1,35 @@
+{
+	"name": "Text4",
+	"plugin-id": "Spritefont2",
+	"sid": 744045160247088,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "FontID1",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 391947883155090
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 228007654272892
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 1024,
+		"height": 32,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 7329163,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}
